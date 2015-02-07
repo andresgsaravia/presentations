@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="1024" />
+  <title>Examen de grado CINVESTAV"</title>
+  <meta name="description" content="Examen para obtener el grado de Doctor en Ciencias en la Especialidad de Física Aplicada por el CINVESTAV-Mérida presentado por Andrés García Saravia Ortiz de Montellano" />
+  <meta name="author" content="Andrés Garcia Saravia Ortiz de Montellano" />
+  <link href="style.css" rel="stylesheet" />
+
+  <!-- MathJax stuff -->
+  <script type="text/javascript"
+	  src="/usr/share/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript">
+    MathJax.Hub.Config({
+    "tex2jax": { inlineMath: [ [ '$', '$' ] ], processEscapes: true },
+    TeX: {equationNumbers: {autoNumber: "AMS"} }
+    });
+  </script>
+</head>
+
+<body class="impress-not-supported">
+  <div class="fallback-message">
+    <p>Su navegador parece no soportar las características requeridas por <em>impress.js</em> usadas en esta presentación</p>
+    <p>Se mostrará una versión simplificada</p>
+  </div>
+
+  <!-- Aquí empieza la presentación como tal -->
+  <div id="impress">
+
+    <!-- Portada -->
+    <div id="portada" class="step box white-box box-shadow" data-x="0" data-y="0">
+      <p class="titulo">
+	Efectos polarónicos en superconductores basados en cobre a partir de un modelo Peierls-Hubbard de tres sitios.</p>
+      <div class="info">
+	<p style="font-size:28px">
+	  Examen para obtener el grado de <em>Doctor en Ciencias en la Especialidad de Física Aplicada</em> presentado por:</p>
+	<p style="font-size:23px"><em>Andrés García Saravia Ortiz de Montellano</em></p>
+	<p style="font-size:28px">Director de tesis:</p>
+	<p style="font-size:23px"><em>Dr. José Mustre de León</em></p>
+	<p style="float:right">14 de Febrero de 2015</p>
+      </div>
+    </div>
+
+    <!-- Introducción -->
+    <div class="step intro box white-box" data-x="1500" data-y="0">
+      <h1>Introducción</h1>
+      <div style="float:left;">
+	<p>Superconductividad descubierta en 1911 (Teoría BCS)</p>
+      <img src="img/Kamerlingh_Onnes_signed.jpg" />
+      </div>
+      <div>
+	<p>Superconductividad de alta temperatura en 1986</p>
+	<img src="img/Muller.jpg" />
+	<img src="img/Bednorz.jpg" />
+      </div>
+      <p>Todavía no hay una teoría para la supeconductividad de alta temperatura crítica</p>
+    </div>
+
+    <!-- BCS -->
+    <div class="step BCS box white-box" data-x="1000" data-y="800">
+      <h1>Teoría BCS</h1>
+      <p>Asume una interacción atractiva entre electrones</p>
+    </div>
+
+    <!-- SC baja Tc -->
+    <div class="step baja-Tc box" data-x="1000" data-y="800" data-z="-2000">
+      <h1>Superconductores de baja temperatura crítica</h1>
+      <p>Esta interacción está mediada por el intercambio de fonones</p>
+      <p>Estima una temperatura crítica de transición superconductora ($T_c$) máxima de alrededor de 30K</p>
+    </div>
+
+    <!-- SC de alta-Tc -->
+    <div class="step alta-temp-fondo box" data-x="2500" data-y="800" data-z="-2000">
+      <h1>Superconductores de alta temperatura crítica</h1>
+      <p>¿Qué es lo que media la interacción?</p>
+      <p>¿Es un mecanismo diferente al BCS?</p>      
+    </div>
+
+    <!-- Esquema  -->
+    <div class="step box white-box" id="esquema"
+	 data-x="-1000" data-y="1000" data-z="1000"
+	 data-rotate-z="90" data-rotate-y="270">
+      <h1>Esquema de la presentación</h1>
+      <ol>
+	<li>Resultados experimentales
+	  <ol>
+	    <li>Conductividad eléctrica</li>
+	    <li>Calor específico</li>
+	    <li>Inhomogeneidades estructurales y electrónicas</li>
+	    <li>Efectos isotópicos anómalos</li>
+	  </ol>
+	</li>
+	<li>Propuesta de un modelo cuántico</li>
+	<li>Análisis del modelo
+	  <ol>
+	    <li>Distorciones locales dinámicas y formación de polarones</li>
+	    <li>Espectro infrarojo</li>
+	    <li>Excitaciones electrónicas</li>
+	    <li>Efectos isotópicos</li>
+	  </ol>
+	</li>
+	<li>Interpretación y discusión</li>
+	<li>Conclusiones</li>
+	<li>Trabajo futuro</li>
+      </ol>
+    </div>
+
+    <!-- Resultados experimentales -->
+    <div class="step box" data-x="1800" data-y="2500" data-scale="3">
+      <h1>Resultados experimentales</h1>
+    </div>
+
+    <!-- Resistividad eléctrica -->
+    <div class="step box green-box" data-x="1200" data-y="2200">
+      <h1>Resistividad eléctrica</h1>
+    </div>
+
+    <div class="step box blue-box" data-x="1200" data-y="2200" data-z="-1" data-rotate-y="180">
+      <p>Interacciones $e^--e^-$ fuertes.</p>
+    </div>
+    
+    <!-- Calor específico -->
+    <div class="step box green-box" data-x="2300" data-y="2200">
+      <h1>Calor específico</h1>
+    </div>
+
+    <div class="step box blue-box" data-x="2300" data-y="2200" data-z="-1" data-rotate-y="180">
+      <p>Acoplamiento $e^-$-fonón importante.</p>
+    </div>
+
+    <!-- Efectos isotópicos anómalos -->
+    <div class="step box green-box" data-x="1200" data-y="3000">
+      <h1>Efectos isotópicos anómalos</h1>
+    </div>
+
+    <div class="step box blue-box" data-x="1200" data-y="3000" data-z="-1" data-rotate-y="180">
+      <p>Formación de polarones</p>
+      <p>Aproximación de Born-Oppenheimer no es aplicable</p>
+    </div>
+
+    <!-- Inhomogeneidades dinámicas -->
+    <div class="step box green-box" data-x="2300" data-y="3000">
+      <h1>Inhomogeneidades dinámicas</h1>
+    </div>
+
+    <div class="step box blue-box" data-x="2300" data-y="3000" data-z="-1" data-rotate-y="180">
+      <p>Inapllicabilidad del formalismo de espacio recíproco</p>
+    </div>
+
+    <!-- Revisión -->
+    <div class="step box"
+	 data-x="1800" data-y="2600" data-scale="2"
+	 data-rotate-y="180">
+    </div>
+
+    <!-- YBCO -->
+    <div class="step" data-x="3700" data-y="2500" data-scale="3">
+      <h1>YBa<sub>2</sub>Cu<sub>3</sub>O<sub>7-&delta;</sub></h1>
+      <img src="img/YBCO_O-Cu-O.png" height="600px"/>
+    </div>
+
+    <!-- Acercamiento al cúmulo -->
+    <div class="step" data-x="3700" data-y="3200">
+    </div>
+
+    <div class="step" data-x="4700" data-y="3100" data-scale="1">
+      <img src="img/O-Cu-O.png" height="700px;" />
+    </div>
+    
+    <div class="step box white-box" data-x="4200" data-y="3040" data-z="990"
+	 data-scale="1">
+      <h1>Modelo</h1>
+    </div>
+
+    <!-- Revisamos de nuevo las sugerencias experimentales -->
+    <div class="step box" data-x="1800" data-y="2600" data-z="1000"
+	 data-scale="2" data-rotate-y="180">
+    </div>
+
+    <!-- Detalle del modelo -->
+    <div class="step wide center" data-x="4200" data-y="2850" data-z="1000">
+      <p>Hamiltoniano en espacio real con interacciones carga-fonón</p>
+      <p>$H = H_{el} + H_{ph} + H_{el-ph}$</p>
+    </div>
+
+    <div class="step wide center" data-x="4200" data-y="2950" data-z="1000">
+      <p>$  H_{el} = \sum_{\sigma,i=1}^3 E_i n_{\sigma i} 
+        + U\sum_{i=1}^3 n_{i\downarrow}n_{i\uparrow} 
+        + t\sum_{\sigma} \left(c_{1\sigma}^\dagger c_{2\sigma} + c_{2\sigma}^\dagger c_{3\sigma} + H.c. \right)$
+      </p>
+    </div>
+    
+    <div class="step wide center" data-x="4050" data-y="3050" data-z="1000">
+      <p>$ H_{ph} = \hbar \omega_{ir}\left(b_{ir}^\dagger b_{ir}+\frac{1}{2}\right) + \hbar \omega_R \left( b_R^\dagger b_R + \frac{1}{2}\right)$
+      </p>
+    </div>
+
+    <div class="step" data-x="4400" data-y="3200" data-z="1000">
+      <img src="img/CuO2-vibrations.png" height="400px" />
+    </div>
+
+    <div class="step wide center" data-x="4050" data-y="3250" data-z="1000">
+      <p>$H_{el-ph} = \tilde{\lambda_{ir}}u_{ir}(n_3 - n_1) + \tilde{\lambda_R} u_R (n_1 + n_3-s_0)$</p>
+      <br />
+      <p>$u_R \equiv \left(\frac{\hbar}{2 m_R \omega_R}\right)^{1/2}(b_R^\dagger + b_R) = \frac{x_3 - x_1}{\sqrt{2}}$</p>
+      <p>$  u_{ir} \equiv \left(\frac{\hbar}{2 m_{ir} \omega_{ir}}\right)^{1/2}(b^\dagger_{ir}+b_{ir}) = \frac{ x_1 + x_3 - ( 2 m_O/m_{Cu})x_2}{(2 + 4 m_O/m_{Cu})^{1/2}}$</p>
+    </div>
+    
+    <!-- Regresamos a ver las inhomogeneidades dinámicas -->
+    <div class="step" data-x="2300" data-y="3000"></div>
+    
+    <div class="step box white-box center" id="distorciones"
+	 data-x="2300" data-y="3000" data-z="1000">
+      <h1>Distorciones dinámicas del cúmulo</h1>
+    </div>
+
+    <div class="step wide center" data-x="2300" data-y="2800" data-z="1000">
+      <p>La diferencia de distancias de enlace ($d$) en términos de la <em>coordenada fonónica</em> ($u_{ir}$)</p>
+      <p>$d=\sqrt{2}\left(1 + 2\frac{m_O}{m_{Cu}} \right)^{1/2}u_{ir}$</p>
+    </div>
+
+    <div class="step wide center" data-x="2300" data-y="2880" data-z="1000">
+      <p>Hallamos la probabilidad de hallar al sistema con distintos valores de $u_{ir}$</p>
+    </div>
+
+    <div class="step wide center" data-x="2300" data-y="3070" data-z="1000">
+      <img src="img/dist.png" />
+    </div>
+
+    <div class="step box center" data-x="2160" data-y="3070" data-z="1050"
+	 data-scale="0.5">
+      <br /><br /><br />
+      <h3 class="semi-white-bg">Distorción estática</h3>
+      <br /><br /><br /><br /><br /><br />
+      <h3 class="semi-white-bg">Distorción dinámica</h3>
+      <br /><br /><br /><br /><br /><br /><br />
+      <h3 class="semi-white-bg">Sin distorción</h3>
+    </div>
+
+    <div class="step wide center" data-x="2300" data-y="3260" data-z="1000">
+      <p>El valor $\lambda_{ir}=0.1263eV$ reproduce la distorción dinámica observada por EXAFS</p>
+    </div>
+    
+    <div class="step wide center" data-x="2300" data-y="3300" data-z="1000">
+      <p>Este observación permite establecer un valor para $\lambda_{ir}$</p>
+    </div>
+
+    <!-- Vista global final -->
+    <div class="step" data-x="2000" data-y="2000" data-scale="8">
+    </div>
+    
+  </div> <!-- #impress -->
+  <script src="/usr/share/impressjs/impress.js"></script>
+  <script>impress().init();</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+html {
+    background-color: #DDDDDD;
+}
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    width:60em;
+    height: 40em;
+}
+
+.wide {width: 60em;}
+.center{text-align:center;}
+.semi-white-bg{background-color: rgba(255,255,255,0.5);}
+
+.box-shadow {box-shadow: 1em 0.5em 0.5em #AAAAAA;}
+.white-box {background-color: white;}
+.green-box {background-color: #D1FFD8;}
+.blue-box {background-color: #CCBDFC;}
+.white-box, .green-box, .blue-box {
+    border: 1px solid #777777;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+/* .step.future { */
+/*     opacity: 0; */
+/* } */
+
+/* .step.present { */
+/*     -webkit-transition: 0.5s; */
+/*     -moz-transition:    0.5s; */
+/*     -ms-transition:     0.5s; */
+/*     -o-transition:      0.5s; */
+/*     transition:         0.5s; */
+/*     opacity: 1; */
+/* } */
+
+.impress-supported .fallback-message {
+    display: none;
+}
+
+/* Portada */
+#portada {
+    background-image:url(img/logo.png);
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+}
+#portada .titulo {
+    font-size: 30px;
+    margin-left: 200px;
+    margin-top: 40px;
+    text-align: center;
+}
+#portada .info {
+    margin: 70px 50px;
+    text-align: center;
+}
+
+/* Introducción */
+.intro {
+}
+
+/* BCS */
+.BCS {
+}
+
+/* Esquema */
+#esquema {
+    background-color: rgba(255,255,255,0.5);
+}
