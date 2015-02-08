@@ -45,7 +45,8 @@
     </div>
 
     <!-- Introducción -->
-    <div class="step intro box white-box" data-x="1500" data-y="0">
+    <div class="step intro box white-box" id="intro"
+	 data-x="1500" data-y="0">
       <h1>Introducción</h1>
       <div style="float:left;margin-left:2em;margin-right:2em;">
 	<p>Superconductividad descubierta en 1911 (Teoría BCS)</p>
@@ -85,22 +86,23 @@
 	 data-rotate-z="90" data-rotate-y="270">
       <h1>Esquema de la presentación</h1>
       <ol>
-	<li>Resultados experimentales
-	  <ol>
-	    <li>Conductividad eléctrica</li>
-	    <li>Calor específico</li>
-	    <li>Inhomogeneidades estructurales y electrónicas</li>
-	    <li>Efectos isotópicos anómalos</li>
-	  </ol>
+	<li><a href="#intro">Introducción</a></li>
+	<li><a href="#exp">Resultados experimentales</a>
+	  <ul>
+	    <li><a href="#expResitividad">Resistividad eléctrica</a></li>
+	    <li><a href="#expCalorEsp">Calor específico</a></li>
+	    <li><a href="#expIsot">Efectos isotópicos anómalos</a></li>
+	    <li><a href="#expInh">Inhomogeneidades estructurales y electrónicas</a></li>
+	  </ul>
 	</li>
-	<li>Propuesta de un modelo cuántico</li>
+	<li><a href="#modelo">Propuesta de un modelo cuántico</a></li>
 	<li>Análisis del modelo
-	  <ol>
+	  <ul>
 	    <li>Distorciones locales dinámicas y formación de polarones</li>
 	    <li>Espectro infrarojo</li>
 	    <li>Excitaciones electrónicas</li>
-	    <li>Efectos isotópicos</li>
-	  </ol>
+	    <li><a href="#isot">Efectos isotópicos</a></li>
+	  </ul>
 	</li>
 	<li>Interpretación y discusión</li>
 	<li>Conclusiones</li>
@@ -109,44 +111,49 @@
     </div>
 
     <!-- Resultados experimentales -->
-    <div class="step box" data-x="1800" data-y="2500" data-scale="3">
+    <div class="step box" id="exp"
+	 data-x="1800" data-y="2500" data-scale="3">
       <h1>Resultados experimentales</h1>
     </div>
 
     <!-- Resistividad eléctrica -->
-    <div class="step box green-box" data-x="1200" data-y="2200">
+    <div class="step box green-box" id="expResitividad"
+	 data-x="1200" data-y="2200">
       <h1>Resistividad eléctrica</h1>
     </div>
 
-    <div class="step box blue-box" data-x="1200" data-y="2200" data-z="-1" data-rotate-y="180">
+    <div class="step box blue-box" data-x="1200" data-y="2200" data-z="-5" data-rotate-y="180">
       <p>Interacciones $e^--e^-$ fuertes.</p>
     </div>
     
     <!-- Calor específico -->
-    <div class="step box green-box" data-x="2300" data-y="2200">
+    <div class="step box green-box" id="expCalorEsp"
+	 data-x="2300" data-y="2200">
       <h1>Calor específico</h1>
     </div>
 
-    <div class="step box blue-box" data-x="2300" data-y="2200" data-z="-1" data-rotate-y="180">
+    <div class="step box blue-box" data-x="2300" data-y="2200" data-z="-5" data-rotate-y="180">
       <p>Acoplamiento $e^-$-fonón importante.</p>
     </div>
 
     <!-- Efectos isotópicos anómalos -->
-    <div class="step box green-box" data-x="1200" data-y="3000">
+    <div class="step box green-box" id="expIsot"
+	 data-x="1200" data-y="3000">
       <h1>Efectos isotópicos anómalos</h1>
     </div>
 
-    <div class="step box blue-box" data-x="1200" data-y="3000" data-z="-1" data-rotate-y="180">
+    <div class="step box blue-box" data-x="1200" data-y="3000" data-z="-5" data-rotate-y="180">
       <p>Formación de polarones</p>
       <p>Aproximación de Born-Oppenheimer no es aplicable</p>
     </div>
 
     <!-- Inhomogeneidades dinámicas -->
-    <div class="step box green-box" data-x="2300" data-y="3000">
+    <div class="step box green-box" id="expInh"
+	 data-x="2300" data-y="3000">
       <h1>Inhomogeneidades dinámicas</h1>
     </div>
 
-    <div class="step box blue-box" data-x="2300" data-y="3000" data-z="-1" data-rotate-y="180">
+    <div class="step box blue-box" data-x="2300" data-y="3000" data-z="-5" data-rotate-y="180">
       <p>Inaplicabilidad del formalismo de espacio recíproco</p>
     </div>
 
@@ -182,36 +189,58 @@
     </div>
 
     <!-- Detalle del modelo -->
-    <div class="step wide center" data-x="4200" data-y="2850" data-z="2000">
+    <div class="step wide center big" id="modelo" data-scale="0.7"
+	 data-x="4200" data-y="2860" data-z="2000">
       <p>Hamiltoniano en espacio real con interacciones carga-fonón</p>
       <p>$H = H_{el} + H_{ph} + H_{el-ph}$</p>
     </div>
 
-    <div class="step wide center" data-x="4200" data-y="2950" data-z="2000">
+    <div class="step wide center big" data-scale="0.6"
+	 data-x="4200" data-y="2950" data-z="2000">
       <p>$  H_{el} = \sum_{\sigma,i=1}^3 E_i n_{\sigma i} 
         + U\sum_{i=1}^3 n_{i\downarrow}n_{i\uparrow} 
         + t\sum_{\sigma} \left(c_{1\sigma}^\dagger c_{2\sigma} + c_{2\sigma}^\dagger c_{3\sigma} + H.c. \right)$
       </p>
     </div>
     
-    <div class="step wide center" data-x="4050" data-y="3050" data-z="2000">
+    <div class="step wide center big" data-scale="0.6"
+	 data-x="4050" data-y="3050" data-z="2000">
       <p>$ H_{ph} = \hbar \omega_{ir}\left(b_{ir}^\dagger b_{ir}+\frac{1}{2}\right) + \hbar \omega_R \left( b_R^\dagger b_R + \frac{1}{2}\right)$
       </p>
     </div>
 
-    <div class="step" data-x="4400" data-y="3200" data-z="2000">
-      <img src="img/CuO2-vibrations.png" height="400px" />
+    <div class="step" data-scale="0.7"
+	 data-x="4400" data-y="3200" data-z="2000">
+      <img src="img/CuO2-vibrations.png" height="500px" />
     </div>
 
-    <div class="step wide center" data-x="4050" data-y="3250" data-z="2000">
+    <div class="step wide center big" data-scale="0.6"
+	 data-x="4050" data-y="3250" data-z="2000">
       <p>$H_{el-ph} = \tilde{\lambda_{ir}}u_{ir}(n_3 - n_1) + \tilde{\lambda_R} u_R (n_1 + n_3-s_0)$</p>
       <br />
       <p>$u_R \equiv \left(\frac{\hbar}{2 m_R \omega_R}\right)^{1/2}(b_R^\dagger + b_R) = \frac{x_3 - x_1}{\sqrt{2}}$</p>
       <p>$  u_{ir} \equiv \left(\frac{\hbar}{2 m_{ir} \omega_{ir}}\right)^{1/2}(b^\dagger_{ir}+b_{ir}) = \frac{ x_1 + x_3 - ( 2 m_O/m_{Cu})x_2}{(2 + 4 m_O/m_{Cu})^{1/2}}$</p>
     </div>
 
-    <div class="step wide center" data-x="4200" data-y="3400" data-z="2000">
+    <div class="step big" data-scale="0.6" id="param"
+	 data-x="4250" data-y="3520" data-z="2000">
       <h3>Elección de los parámetros</h3>
+      <ul>
+	<li>Salto a primeros vecinos: $t=0.5$ eV</li>
+	<li>Energías de banda: $E_0=0.5$ eV <br />
+	  <span class="small">Tight-binding
+	    (<a href="http://dx.doi.org/10.1103/PhysRevB.39.4235">DeWeert, M. <em>et al.</em> (1989). PRB, 39(7), 4235–4248</a>)</span></li>
+	<li>Repulsión Coulómbica entre cargas en los sitios O(4) y Cu(1): $U=7$ eV<br />
+	  <span class="small">Constrained density functional
+	    (<a href="http://dx.doi.org/10.1103/PhysRevB.39.9028">Hybertsen <em>et al.</em> (1989). PRB, 39(13), 9028–9041</a>)</span></li>
+	<li>Frecuencia del modo vibracional Raman: $\omega_R=500$ cm$^{-1}$</li>
+	<li>Frecuencia del modo vibracional infrarrojo: $\omega_{ir}=612.4$ cm$^{-1}$<br />
+	  <span class="small">Espectroscopía (
+	    <a href="http://dx.doi.org/10.1016/0038-1098(88)90025-7">Cardona <em>et al.</em> (1988). Solid State Communications, 67(8), 789–793.</a>,<br />
+	    <a href="http://dx.doi.org/10.1016/0038-1098(88)91187-8">Thomsen <em>et al.</em> (1988). Solid State Communications, 67(11), 1069–1072.</a>)</span></li>
+	<li>Acoplamiento carga-red con el modo Raman: $\lambda_R=0$.</li>
+	<li>Acoplamiento carga-red con el modo infrarrojo: $\lambda_{ir}=$?</li>
+      </ul>
     </div>
 
     <!-- Distorciones dinámicas -->
@@ -222,20 +251,23 @@
       <h1>Distorciones dinámicas del cúmulo</h1>
     </div>
 
-    <div class="step wide center" data-x="2300" data-y="2800" data-z="2000">
+    <div class="step wide center big" data-scale="0.6"
+	 data-x="2300" data-y="2800" data-z="2000">
       <p>La diferencia de distancias de enlace ($d$) en términos de la <em>coordenada fonónica</em> ($u_{ir}$)</p>
       <p>$d=\sqrt{2}\left(1 + 2\frac{m_O}{m_{Cu}} \right)^{1/2}u_{ir}$</p>
     </div>
 
-    <div class="step wide center" data-x="2300" data-y="2880" data-z="2000">
+    <div class="step wide center big" data-scale="0.6"
+	 data-x="2300" data-y="2880" data-z="2000">
       <p>Hallamos la probabilidad de hallar al sistema en el estado base con distintos valores de $u_{ir}$</p>
     </div>
 
-    <div class="step wide center" data-x="2300" data-y="3070" data-z="2000">
-      <img src="img/dist.png" />
+    <div class="step" data-scale="0.7"
+	 data-x="2300" data-y="3070" data-z="2000">
+      <img src="img/dist.png" height="500px"/>
     </div>
 
-    <div class="step box center" data-x="2160" data-y="3070" data-z="2050"
+    <div class="step box center" data-x="2145" data-y="3070" data-z="2050"
 	 data-scale="0.5">
       <br /><br /><br />
       <h3 class="semi-white-bg">Distorción estática</h3>
@@ -245,11 +277,13 @@
       <h3 class="semi-white-bg">Sin distorción</h3>
     </div>
 
-    <div class="step wide center" data-x="2300" data-y="3260" data-z="2000">
+    <div class="step wide center big" data-scale="0.6"
+	 data-x="2300" data-y="3260" data-z="2000">
       <p>El valor $\lambda_{ir}=0.1263$ eV reproduce la distorción dinámica observada por EXAFS</p>
     </div>
     
-    <div class="step wide center" data-x="2300" data-y="3300" data-z="2000">
+    <div class="step wide center big" data-scale="0.6"
+	 data-x="2300" data-y="3300" data-z="2000">
       <p>Este observación permite establecer un valor para $\lambda_{ir}$</p>
     </div>
 
@@ -282,31 +316,31 @@
     <!-- Efectos isotópicos -->
     <div class="step" data-x="1200" data-y="3000"></div>
 
-    <div class="step long-box white-box" data-scale="1.5"
+    <div class="step long-box white-box" data-scale="1.5" id="isot"
 	 data-x="1200" data-y="3170" data-z="1990">
       <h2 style="text-align:center">Efectos isotópicos</h2>
     </div>
 
-    <div class="step" data-scale="0.7"
+    <div class="step" data-scale="0.4"
 	 data-x="1050" data-y="2850" data-z="2000">
-      <img src="img/3-masses-2-springs-linear.png" />
+      <img src="img/3-masses-2-springs-linear.png" height="300px"/>
     </div>
 
-    <div class="step wide center" data-scale="0.7"
+    <div class="step wide center big" data-scale="0.3"
 	 data-x="1300" data-y="2850" data-z="2000">
       <p>Modos normales de vibración:</p>
       <p>$$\omega_{R}= \sqrt{\frac{k}{m_O}}$$</p>
       <p>$$\omega_{ir} = \sqrt{\frac{k(m_{Cu}+2m_O)}{m_Om_{Cu}}}$$</p>
     </div>
 
-    <div class="step wide center" data-scale="0.7"
+    <div class="step wide center big" data-scale="0.3"
 	 data-x="1470" data-y="2845" data-z="2000">
       <p>Constantes de acoplamiento adimensionales:</p>
       <p>$$\lambda_R=\tilde{\lambda_R}\left(\frac{\hbar}{2m_R\omega_R}\right)^{1/2}$$</p>
       <p>$$\lambda_{ir}=\tilde{\lambda_{ir}}\left(\frac{\hbar}{2m_{ir}\omega_{ir}}\right)^{1/2}$$</p>
     </div>
 
-    <div class="step wide center" data-scale="0.5"
+    <div class="step wide center big" data-scale="0.3"
 	 data-x="1030" data-y="2980" data-z="2000">
       <h1>Energía de formación polarónica</h1>
       <p>$$\Delta_g=\frac{\Delta\omega_g(O^{16})-\Delta\omega_g(O^{18})}{\Delta\omega_g(O^{16})}$$</p>
@@ -314,12 +348,12 @@
       <p>con el estado base en el sistema sin acoplar ($\lambda_{ir}=0$).</p>
     </div>
 
-    <div class="step" data-scale="0.5"
-	 data-x="1030" data-y="3140" data-z="2000">
-      <img src="img/pol-isot.png" />
+    <div class="step" data-scale="0.4"
+	 data-x="1030" data-y="3100" data-z="2000">
+      <img style="margin-top:11em" src="img/pol-isot.png" height="500px"/>
     </div>
 
-    <div class="step wide center" data-scale="0.5"
+    <div class="step wide center big" data-scale="0.3"
 	 data-x="1400" data-y="2970" data-z="2000">
       <h1>Excitaciones infrarojas</h1>
       <p>$$\Delta_i=\frac{\omega_i(O^{16})-\omega_i(O^{18})}{\omega_i(O^{16})}$$</p>
@@ -327,8 +361,8 @@
     </div>
 
     <div class="step" data-scale="0.5"
-	 data-x="1400" data-y="3190" data-z="2000">
-      <img src="img/ir-isot.png" />
+	 data-x="1380" data-y="3170" data-z="2000">
+      <img src="img/ir-isot.png" height="600px"/>
     </div>
 
     <div class="step" data-scale="0.35"
@@ -346,8 +380,25 @@
       </table>
     </div>
 
+    <div class="step wide center" data-scale="0.45"
+	 data-x="1030" data-y="3400" data-z="2000">
+      <h1>Excitaciones electrónicas</h1>
+      <img src="img/el-isot.png" height="600px"/>
+    </div>
+
+    <div class="step" id="isot-conclusiones" data-scale="0.4"
+	 data-x="1400" data-y="3550" data-z="2000">
+      <p class="center">Resumen de los efectos isotópicos:</p>
+      <ul>
+	<li>Efectos isotópicos diferentes a la predicción harmómica en acoplamientos intermedios.</li>
+	<li>Evidencia de comportamiento polarónico en el primer estado excitado.</li>
+	<li>Efecto isotópico negativo en la excitación electrónica.</li>
+	<li>Diferentes efectos isotópicos dependiendo de la excitación</li>
+      </ul>
+    </div>
+
     <!-- Vista global final -->
-    <div class="step" data-x="2000" data-y="2000" data-scale="8">
+    <div class="step" data-x="2000" data-y="2500" data-scale="8">
     </div>
     
   </div> <!-- #impress -->

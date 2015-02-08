@@ -1,5 +1,12 @@
 html {background-color: #DDDDDD;}
-h1 {text-align: center;}
+h1, h3 {text-align: center;}
+a:link {
+    text-decoration: none;
+    color:black;
+}
+a:hover {text-decoration:underline}
+a:visited {color:black}
+ul,ol{list-style-position: inside;}
 
 .box {
     width:60em;
@@ -25,11 +32,13 @@ h1 {text-align: center;}
     border-radius: 2em;
     padding: 1em;
 }
+.big {font-size:2em;}
+.small {font-size: 0.7em;}
 
+/* Contenido futuro oculto*/
 /* .step.future { */
 /*     opacity: 0; */
 /* } */
-
 /* .step.present { */
 /*     -webkit-transition: 0.5s; */
 /*     -moz-transition:    0.5s; */
@@ -46,10 +55,11 @@ h1 {text-align: center;}
     margin-top:50px;
     margin-left:10px;
     padding:15px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(150,150,250,0.3);
     border-radius: 30px;
     border:1px solid rgb(200,200,200);
 }
+#menu:hover {background-color: rgba(150,150,250,1);}
 
 /* Portada */
 #portada {
@@ -70,7 +80,20 @@ h1 {text-align: center;}
 
 
 /* Esquema */
-#esquema {background-color: rgba(255,255,255,0.5);}
+#esquema {background-color: rgba(255,255,255,0.7);}
+#esquema > ol {
+    font-size: 1.6em;
+    margin-left: 8em;
+    margin-top: 2em;
+}
+
+#param {width:32em;}
+#param ul {
+    list-style-type: square;
+    text-align: center;
+}
+#param .small {color: rgb(50,50,50);}
+#param a {color: rgb(50,50,50);}
 
 #shifts-table,
 #shifts-table th,
@@ -82,3 +105,8 @@ h1 {text-align: center;}
     border-collapse: collapse;
 }
 #shifts-table td {min-width: 8em;}
+
+#isot-conclusiones{
+    font-size:2em;
+    width: 28em;
+}
