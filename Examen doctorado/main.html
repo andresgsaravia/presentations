@@ -95,17 +95,16 @@
 	    <li><a href="#expInh">Inhomogeneidades estructurales y electrónicas</a></li>
 	  </ul>
 	</li>
-	<li><a href="#modelo">Propuesta de un modelo cuántico</a></li>
-	<li>Análisis del modelo
+	<li><a href="#modelo">Propuesta de un modelo cuántico</a>
 	  <ul>
-	    <li>Distorciones locales dinámicas y formación de polarones</li>
-	    <li>Espectro infrarojo</li>
-	    <li>Excitaciones electrónicas</li>
+	    <li><a href="#distorciones">Distorciones locales dinámicas</a></li>
+	    <li><a href="#polaron">Energía de formación de polarones</a></li>
+	    <li><a href="#ir">Espectro infrarojo</a></li>
+	    <li><a href="#electr">Excitaciones electrónicas</a></li>
 	    <li><a href="#isot">Efectos isotópicos</a></li>
 	  </ul>
 	</li>
-	<li>Interpretación y discusión</li>
-	<li>Conclusiones</li>
+	<li>Discusión y Conclusiones</li>
 	<li>Trabajo futuro</li>
       </ol>
     </div>
@@ -177,8 +176,8 @@
       <img src="img/O-Cu-O.png" height="700px;" />
     </div>
     
-    <div class="step long-box white-box" data-x="4200" data-y="3200" data-z="1990"
-	 data-scale="1.5">
+    <div class="step long-box white-box" id="modelo"
+	 data-x="3800" data-y="3200" data-z="1990" data-scale="1.5">
       <h1>Modelo</h1>
     </div>
 
@@ -189,14 +188,14 @@
     </div>
 
     <!-- Detalle del modelo -->
-    <div class="step wide center big" id="modelo" data-scale="0.7"
-	 data-x="4200" data-y="2860" data-z="2000">
+    <div class="step wide center big" data-scale="0.7"
+	 data-x="3800" data-y="2860" data-z="2000">
       <p>Hamiltoniano en espacio real con interacciones carga-fonón</p>
       <p>$H = H_{el} + H_{ph} + H_{el-ph}$</p>
     </div>
 
     <div class="step wide center big" data-scale="0.6"
-	 data-x="4200" data-y="2950" data-z="2000">
+	 data-x="3800" data-y="2950" data-z="2000">
       <p>$  H_{el} = \sum_{\sigma,i=1}^3 E_i n_{\sigma i} 
         + U\sum_{i=1}^3 n_{i\downarrow}n_{i\uparrow} 
         + t\sum_{\sigma} \left(c_{1\sigma}^\dagger c_{2\sigma} + c_{2\sigma}^\dagger c_{3\sigma} + H.c. \right)$
@@ -204,18 +203,18 @@
     </div>
     
     <div class="step wide center big" data-scale="0.6"
-	 data-x="4050" data-y="3050" data-z="2000">
+	 data-x="3650" data-y="3050" data-z="2000">
       <p>$ H_{ph} = \hbar \omega_{ir}\left(b_{ir}^\dagger b_{ir}+\frac{1}{2}\right) + \hbar \omega_R \left( b_R^\dagger b_R + \frac{1}{2}\right)$
       </p>
     </div>
 
     <div class="step" data-scale="0.7"
-	 data-x="4400" data-y="3200" data-z="2000">
+	 data-x="4000" data-y="3200" data-z="2000">
       <img src="img/CuO2-vibrations.png" height="500px" />
     </div>
 
     <div class="step wide center big" data-scale="0.6"
-	 data-x="4050" data-y="3250" data-z="2000">
+	 data-x="3650" data-y="3250" data-z="2000">
       <p>$H_{el-ph} = \tilde{\lambda_{ir}}u_{ir}(n_3 - n_1) + \tilde{\lambda_R} u_R (n_1 + n_3-s_0)$</p>
       <br />
       <p>$u_R \equiv \left(\frac{\hbar}{2 m_R \omega_R}\right)^{1/2}(b_R^\dagger + b_R) = \frac{x_3 - x_1}{\sqrt{2}}$</p>
@@ -223,7 +222,7 @@
     </div>
 
     <div class="step big" data-scale="0.6" id="param"
-	 data-x="4250" data-y="3520" data-z="2000">
+	 data-x="3850" data-y="3520" data-z="2000">
       <h3>Elección de los parámetros</h3>
       <ul>
 	<li>Salto a primeros vecinos: $t=0.5$ eV</li>
@@ -290,12 +289,26 @@
     <!-- Energía de formación polarónica -->
     <div class="step box green-box center" id="polaron-exp"
 	 data-x="2300" data-y="3800">
-      <h1> Energía de formación polarónica</h1>
+      <h1>Energía de formación polarónica</h1>
     </div>
 
     <div class="step box white-box center" id="polaron"
-	 data-x="2300" data-y="3800" data-z="2000">
-      <h1> Energía de formación polarónica</h1>
+	 data-x="2300" data-y="3800" data-z="1990">
+      <h1> Energía de formación bipolarónica</h1>
+    </div>
+    <div class="step wide big center" data-scale="0.7"
+	 data-x="2300" data-y="3620" data-z="2000">
+      <p>Energía de formación bipolarónica: $\Delta\omega_g = \omega_g(\lambda_{ir}) - \omega_g(\lambda_{ir}=0)$</p>
+      <p>Donde $\omega_g(\lambda_{ir})$ es la energía del estado base.</p>
+    </div>
+    <div class="step" data-scale="0.6"
+	 data-x="2300" data-y="3840" data-z="2000">
+      <img src="img/bip-en.png" height="600px"/>
+    </div>
+    <div class="step wide big center" data-scale="0.7"
+	 data-x="2300" data-y="4070" data-z="2000">
+      <p>$\Delta\omega_g(\lambda_{ir}=0.1263$ eV$) \sim 38$ meV</p>
+      <p>Experimental: $\sim 45$ meV</p>
     </div>
 
     <!-- Excitaciones infrarrojas -->
@@ -305,12 +318,81 @@
     </div>
     
     <div class="step box white-box center" id="ir" 
-	 data-x="2300" data-y="4600" data-z="2000">
+	 data-x="2300" data-y="4600" data-z="1990">
       <h1>Excitaciones infrarrojas</h1>
-      <p>Clasificación de las excitaciones.</p>
-      <p>Se reproduce el resultado experimental</p>
-      <p>Se observa un hombro en el modo infrarrojo</p>
-      <p>Renormalización de las vibraciones con $\lambda_{ir}\gg 1$</p>
+    </div>
+
+    <div class="step wide big center" data-scale="0.4"
+	 data-x="2000" data-y="4380" data-z="2000">
+      <h2>Clasificación de las excitaciones</h2>
+    </div>
+
+    <div class="step" data-scale="0.6"
+	 data-x="2500" data-y="4550" data-z="2000">
+      <img src="img/ir-spect.png" height="650px" />
+    </div>
+
+    <div class="step wide big center" data-scale="0.4"
+	 data-x="2000" data-y="4700" data-z="2000">
+      <p>Comparación con el experimento</p>
+    </div>
+
+    <div class="step widish center big" data-scale="0.4"
+	 data-x="2500" data-y="4800" data-z="2000">
+      <h2>Resumen espectro infrarrojo</h2>
+      <ul>
+	<li>Se reproduce el resultado experimental</li>
+	<li>Se observa un hombro en el modo infrarrojo</li>
+	<li>Renormalización de las vibraciones con $\lambda_{ir}\gg 1$</li>
+      </ul>
+    </div>
+    
+    <!-- Excitaciones electrónicas -->
+    <div class="step long-box white-box" data-scale="1.5" id="electr"
+	 data-x="1200" data-y="4250" data-z="1990">
+      <h2>Excitaciones electrónicas</h2>
+    </div>
+
+    <div class="step" data-scale="0.6"
+	 data-x="1100" data-y="4050" data-z="2000">
+      <img src="img/el-spect.png" height="600px"/>
+    </div>
+
+    <div class="step widish big" data-scale="0.55"
+	 data-x="1220" data-y="4000" data-z="2000">
+      <ul style="text-align:right">
+	<li>Decremento de energías.</li>
+	<li>Estabilización a $\lambda_{ir}$ grandes.</li>
+      </ul>
+    </div>      
+
+    <div class="step" data-scale="0.5"
+	 data-x="1030" data-y="4450" data-z="2000">
+      <h2>Projección en estados de ocupación definida</h2>
+      <img src="img/el-oc.png" height="690px" />
+    </div>
+
+    <div class="step" data-scale="0.3"
+	 data-x="1400" data-y="4350" data-z="2000">
+      <h1>Projección en coordenadas fonónicas</h1>
+      <img src="img/el-ph.png" height="400px" />
+    </div>
+
+    <div class="step widish big center" data-scale="0.4"
+	 data-x="1400" data-y="4550" data-z="2000">
+      <h3>Resumen de las excitaciones electrónicas</h3>
+      <ul>
+	<li>Tunelamiento entre dos configuraciones<br /> distorcionadas para $\lambda_{ir}$ intermedio.</li>
+	<li>Similar al estado base.</li>
+	<li>Localización parcial y dinámica de la carga</li>
+      </ul>
+    </div>
+	
+    <div class="step widish big center" data-scale="0.4" data-rotate-y="180"
+	 data-x="1400" data-y="4550" data-z="1985">
+      <p>García Saravia Ortíz de Montellano, A. &amp; Mustre de León, J.</p>
+      <p class="small">
+	<a href="http://dx.doi.org/10.1007/s10948-013-2424-9">Journal of Superconductivity and Novel Magnetism (2013), 27(4), 991–994.</a></p>
     </div>
 
     <!-- Efectos isotópicos -->
@@ -318,7 +400,7 @@
 
     <div class="step long-box white-box" data-scale="1.5" id="isot"
 	 data-x="1200" data-y="3170" data-z="1990">
-      <h2 style="text-align:center">Efectos isotópicos</h2>
+      <h2>Efectos isotópicos</h2>
     </div>
 
     <div class="step" data-scale="0.4"
@@ -353,6 +435,11 @@
       <img style="margin-top:11em" src="img/pol-isot.png" height="500px"/>
     </div>
 
+    <div class="step big center wide" data-scale="0.4"
+	 data-x="1030" data-y="3250" data-z="2000">
+      <p>¿Medición experimental?</p>
+    </div>
+
     <div class="step wide center big" data-scale="0.3"
 	 data-x="1400" data-y="2970" data-z="2000">
       <h1>Excitaciones infrarojas</h1>
@@ -366,39 +453,68 @@
     </div>
 
     <div class="step" data-scale="0.35"
-	 data-x="1420" data-y="3400" data-z="2000">
+	 data-x="1400" data-y="3400" data-z="2000">
+      <h1>Efectos isotópicos a $\lambda_{ir}=0.1263$ eV</h1>
       <table id="shifts-table" >
 	<thead>
 	  <tr><th>Excitación</th><th>$\Delta_i$ (&#37;)</th><th>Harmónico (&#37;)</th></tr>
 	</thead>
 	<tbody>
-	  <tr><td>1 infrared            </td><td>-5.07</td><td>3.75</td></tr>
-	  <tr><td>1 infrared and 1 Raman</td><td> 3.36</td><td>4.65</td></tr>
-	  <tr><td>2 infrared            </td><td> 1.17</td><td>3.75</td></tr>
-	  <tr><td>3 infrared            </td><td> 1.40</td><td>3.75</td></tr>
+	  <tr><td>1 infrarrojo          </td><td>-5.07</td><td>3.75</td></tr>
+	  <tr><td>1 infrarrojo y 1 Raman</td><td> 3.36</td><td>4.65</td></tr>
+	  <tr><td>2 infrarrojo          </td><td> 1.17</td><td>3.75</td></tr>
+	  <tr><td>3 infrarrojo          </td><td> 1.40</td><td>3.75</td></tr>
 	</tbody>
       </table>
     </div>
 
     <div class="step wide center" data-scale="0.45"
-	 data-x="1030" data-y="3400" data-z="2000">
+	 data-x="1020" data-y="3425" data-z="2000">
       <h1>Excitaciones electrónicas</h1>
       <img src="img/el-isot.png" height="600px"/>
     </div>
 
+    <div class="step wide center big" data-scale="0.3"
+	 data-x="1020" data-y="3620" data-z="2000">
+      <p>Gweon <em>et al.</em>: efecto isotópico de &#126;15 meV en
+	Bi<sub>2</sub>Sr<sub>2</sub>CaCu<sub>2</sub>O<sub>8+&delta;</sub>. (ARPES)<br />
+	<span class="small"><a href="http://dx.doi.org/10.1038/nature02731">Nature (2004), 430(6996), 187–90.</a></span></p>
+      <p>Douglas <em>et al.</em>: hallan efecto isotópico de 0.9&plusmn;0.4<br />
+	<span class="small"><a href="https://dx.doi.org/10.1038/nature05738(2007)">Nature (2007), 446(7133), E5.</a></span></p>
+      <p>Este modelo predice efecto de 1.6 meV</p>
+    </div>
+
     <div class="step" id="isot-conclusiones" data-scale="0.4"
 	 data-x="1400" data-y="3550" data-z="2000">
-      <p class="center">Resumen de los efectos isotópicos:</p>
+      <h3>Resumen de los efectos isotópicos:</h3>
       <ul>
 	<li>Efectos isotópicos diferentes a la predicción harmómica en acoplamientos intermedios.</li>
 	<li>Evidencia de comportamiento polarónico en el primer estado excitado.</li>
-	<li>Efecto isotópico negativo en la excitación electrónica.</li>
 	<li>Diferentes efectos isotópicos dependiendo de la excitación</li>
+	<li>Efecto isotópico negativo pero pequeño en la excitación electrónica.</li>
       </ul>
     </div>
 
+    <div class="step center wide big" data-scale="0.4" data-rotate-y="180"
+	 data-x="1380" data-y="3550" data-z="1970" >
+      <p>García Saravia Ortíz de Montellano, A. &amp; Mustre de León, J.</p>
+      <p class="small"><a href="http://dx.doi.org/10.1007/s10948-014-2913-5">Journal of Superconductivity and Novel Magnetism (2014), 1(6–10).</a></p>
+    </div>
+
+    <div class="step box white-box" id="agradecimientos"
+	 data-x="-1000" data-y="2200" data-z="1000"
+	 data-rotate-z="90" data-rotate-y="270">
+      <h1>Agradecimientos</h1>
+    </div>
+
+    <div class="step box white-box" id="final"
+	 data-x="-1000" data-y="3400" data-z="1000"
+	 data-rotate-z="90" data-rotate-y="270">
+      <h1>Gracias por su atención</h1>
+    </div>
+
     <!-- Vista global final -->
-    <div class="step" data-x="2000" data-y="2500" data-scale="8">
+    <div class="step" data-x="2000" data-y="2500" data-scale="9">
     </div>
     
   </div> <!-- #impress -->

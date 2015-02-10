@@ -1,5 +1,5 @@
 html {background-color: #DDDDDD;}
-h1, h3 {text-align: center;}
+h1, h2, h3 {text-align: center;}
 a:link {
     text-decoration: none;
     color:black;
@@ -80,7 +80,9 @@ ul,ol{list-style-position: inside;}
 
 
 /* Esquema */
-#esquema {background-color: rgba(255,255,255,0.7);}
+#esquema,
+#agradecimientos,
+#final {background-color: rgba(255,255,255,0.7);}
 #esquema > ol {
     font-size: 1.6em;
     margin-left: 8em;
@@ -104,7 +106,7 @@ ul,ol{list-style-position: inside;}
     font-size: 2em;
     border-collapse: collapse;
 }
-#shifts-table td {min-width: 8em;}
+#shifts-table td {min-width: 10em;}
 
 #isot-conclusiones{
     font-size:2em;
