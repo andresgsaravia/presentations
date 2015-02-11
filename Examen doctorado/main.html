@@ -34,59 +34,99 @@
     <div id="portada" class="step box white-box box-shadow" data-x="0" data-y="0">
       <p class="titulo">
 	Efectos polarónicos en superconductores basados en cobre a partir de un modelo Peierls-Hubbard de tres sitios.</p>
-      <div class="info">
-	<p style="font-size:28px">
+      <div class="portada-info">
+	<p class="concepto">
 	  Examen para obtener el grado de <em>Doctor en Ciencias en la Especialidad de Física Aplicada</em> presentado por:</p>
-	<p style="font-size:23px"><em>Andrés García Saravia Ortiz de Montellano</em></p>
-	<p style="font-size:28px">Director de tesis:</p>
-	<p style="font-size:23px"><em>Dr. José Mustre de León</em></p>
-	<p style="float:right">14 de Febrero de 2015</p>
+	<p class="dato"><em>Andrés García Saravia Ortiz de Montellano</em></p>
+	<p class="concepto">Director de tesis:</p>
+	<p class="dato"><em>Dr. José Mustre de León</em></p>
+	<p class="fecha">14 de Febrero de 2015</p>
       </div>
     </div>
 
     <!-- Introducción -->
-    <div class="step intro box white-box" id="intro"
+    <div class="step center box white-box" id="intro"
 	 data-x="1500" data-y="0">
       <h1>Introducción</h1>
-      <div style="float:left;margin-left:2em;margin-right:2em;">
-	<p>Superconductividad descubierta en 1911 (Teoría BCS)</p>
-      <img src="img/Kamerlingh_Onnes_signed.jpg" style="padding-left:20%;"/>
-      </div>
-      <div>
-	<p>Superconductividad de alta temperatura en 1986</p>
-	<img src="img/Muller.jpg" />
-	<img src="img/Bednorz.jpg" />
-      </div>
-      <p>Todavía no hay una teoría para la supeconductividad de alta temperatura crítica</p>
+
+      <a title="By Mai-Linh Doan (self photo) [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY-SA 2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons"
+	 href="https://commons.wikimedia.org/wiki/File%3AMeissner_effect_p1390048.jpg">
+	<img height="200" alt="Meissner effect p1390048"
+	     src="img/Meissner_effect.jpg"/>
+      </a>
+    </div>
+
+    <div class="step center widish white-bg big"
+	 data-x="1500" data-y="-50" data-z="-10"
+	 data-rotate-y="180" data-scale="0.6">
+      <p>Debajo de $T_c$:</p>
+      <ul>
+	<li>Cero resistencia eléctrica</li>
+	<li>Expulsión del campo magnético interior (efecto Meissner)</li>
+      </ul>
+    </div>
+    
+    <div class="step" data-scale="0.55"
+	 data-x="1300" data-y="140" data-z="5">
+      <img src="img/Kamerlingh_Onnes.jpg" height="500"/>
     </div>
 
     <!-- BCS -->
-    <div class="step BCS box white-box" data-x="1000" data-y="800">
-      <h1>Teoría BCS</h1>
-      <p>Asume una interacción atractiva entre electrones</p>
+    <div class="step box semi-white-box"
+	 data-x="1500" data-y="140" data-z="1995">
+      <h1>Explicación teórica</h1>
     </div>
 
-    <!-- SC baja Tc -->
-    <div class="step baja-Tc box" data-x="1000" data-y="800" data-z="-2000">
-      <h1>Superconductores de baja temperatura crítica</h1>
-      <p>Esta interacción está mediada por el intercambio de fonones</p>
-      <p>Estima una temperatura crítica de transición superconductora ($T_c$) máxima de alrededor de 30K</p>
+    <div class="step wide big center"
+	 data-x="1300" data-y="0" data-z="2000">
+      <h1>Baja $T_c$</h1>
+      <p>Asume una interacción atractiva entre electrones</p>
+      <p>En SC de baja Tc esta interacción está mediada por fonones</p>
+      <p>Tc máxima de 30K</p>
+    </div>
+
+    <div class="step" data-scale="0.55"
+	 data-x="1700" data-y="140" data-z="5">
+      <img src="img/Bednorz_Muller.jpg" height="500"/>
     </div>
 
     <!-- SC de alta-Tc -->
-    <div class="step alta-temp-fondo box" data-x="2500" data-y="800" data-z="-2000">
+    <div class="step"
+	 data-x="1500" data-y="140" data-z="2005">
       <h1>Superconductores de alta temperatura crítica</h1>
       <p>¿Qué es lo que media la interacción?</p>
       <p>¿Es un mecanismo diferente al BCS?</p>      
     </div>
 
+    <!-- Objetivo -->
+    <div class="step box white-box" id="objetivo"
+	 data-x="-1000" data-y="450" data-z="1000"
+	 data-rotate-z="90" data-rotate-y="270">
+      <h1>Objetivo</h1>
+      <p>Contribuir a la respuesta de:</p>
+      <ul>
+	<li>¿Es aplicable la teoría BCS a los superconductores de alta $T_c$?</li>
+	<li>¿Se pueden tener interacciones atractivas entre cargas con mecanismos diferentes al intercambio de fonones?</li>
+      </ul>
+    </div>
+    <div class="step wide" id="objetivo2"
+	 data-x="-1005" data-y="450" data-z="900"
+	 data-rotate-z="90" data-rotate-y="270">
+      <p>Nos enfocamos en las excitaciones polarónicas en los superconductores basados en cobre.</p>
+      <ul>
+	<li>¿Pueden los polarones mediar una interacción atractiva entre portadores de carga?</li>
+	<li><strong>¿Cómo se manifiestan las excitaciones polarónicas en las distintas propiedades de estos materiales?</strong></li>
+      </ul>
+    </div>
+
     <!-- Esquema  -->
     <div class="step box white-box" id="esquema"
-	 data-x="-1000" data-y="1000" data-z="1000"
+	 data-x="-1000" data-y="1500" data-z="1000"
 	 data-rotate-z="90" data-rotate-y="270">
       <h1>Esquema de la presentación</h1>
       <ol>
 	<li><a href="#intro">Introducción</a></li>
+	<li><a href="#objetivo">Objetivo</a></li>
 	<li><a href="#exp">Resultados experimentales</a>
 	  <ul>
 	    <li><a href="#expResitividad">Resistividad eléctrica</a></li>
@@ -137,48 +177,137 @@
 
     <!-- Efectos isotópicos anómalos -->
     <div class="step box green-box" id="expIsot"
-	 data-x="1200" data-y="3000">
+	 data-x="1200" data-y="3000" data-z="-5">
       <h1>Efectos isotópicos anómalos</h1>
     </div>
 
-    <div class="step box blue-box" data-x="1200" data-y="3000" data-z="-5" data-rotate-y="180">
-      <p>Formación de polarones</p>
-      <p>Aproximación de Born-Oppenheimer no es aplicable</p>
+    <div class="step widish big center oval3" data-scale="0.6"
+	 data-x="930" data-y="2830">
+      <p>Coeficiente isotópico, $\alpha$:</p>
+      <p>$T_c\propto M^{-\alpha}$</p>
+      <p>Para un superconductor convencional: $\alpha=0.5$</p>
+    </div>
+
+    <div class="step" data-scale="0.5"
+	 data-x="930" data-y="3050">
+      <img src="img/isot-Tc-exp.png" height="600px" />
+    </div>
+
+    <div class="step widish big center" data-scale="0.5"
+	 data-x="930" data-y="3250">
+      <p>La mayoría es atribuíble a los planos superconductores.<br />
+	<span class="small">
+	  <a href="htp://dx.doi.org/10.1038/371681a0">
+	    Zech <em>et al.</em>. Nature, 371(6499), 681–683. (1994)</a></span></p>
+      <p>Las vibraciones fuera del plano no son harmónicas.<br />
+	<span class="small">
+	  <a href="http://dx.doi.org/10.1016/0921-4534(94)90482-0">
+	    Ruani <em>et al.</em> Physica C: Superconductivity, 226(1-2), 101–105. (1994)</a></span></p>
+    </div>
+
+    <div class="step" data-scale="0.5"
+	 data-x="1340" data-y="2930">
+      <img src="img/isot-Tstar-exp.png" height="700px" />
+    </div>
+
+    <div class="step narrow big center" data-scale="0.5"
+	 data-x="1500" data-y="2930">
+      <p style="float:right;text-align:right;">Efecto isotópico en $T^*$<br /> de signo contrario a $T_c$<br />
+	<span class="small">
+	  <a href="http://dx.doi.org/10.1103/PhysRevLett.84.1990">
+	    Rubio Temprano <em>et al.</em><br /> Physical Review Letters,<br /> 84(9), 1990–1993. (2000)</a></span></p>
+    </div>
+
+    <div class="step center big" data-scale="0.4"
+	 data-x="1360" data-y="3220">
+      <img src="img/el-isot-ARPES.png" height="500px" />
+    </div>
+    
+    <div class="step narrow big center" data-scale="0.5"
+	 data-x="1525" data-y="3220">
+      <p style="float:right;text-align:right;">Efecto isotópico contrario<br />dependiendo de la región<br /> del espacio $k$<br />
+	<span class="small">
+	  <a href="http://dx.doi.org/10.1103/10.1038/nature02731">
+	    Gweon <em>et al.</em><br /> Nature, 430(6996), 187–90. (2000)</a></span><br /><br />
+	Efecto más pequeño<br />
+	<span class="small">
+	  <a href="http://dx.doi.org10.1038/nature05738">
+	    Douglas <em>et al.</em><br />Nature, 446(7133), E5. (2007)</a></span></p>
+    </div>
+
+    <div class="step box blue-box center exp"
+	 data-x="1200" data-y="3000" data-z="-10" data-rotate-y="180">
+      <p>La red cristalina tiene gran importancia en la mayoría de las propiedades</p>
+      <p>Interacción importante entre portadores de carga y red cristalina</p>
     </div>
 
     <!-- Inhomogeneidades dinámicas -->
     <div class="step box green-box" id="expInh"
-	 data-x="2300" data-y="3000">
-      <h1>Inhomogeneidades dinámicas</h1>
+	 data-x="2300" data-y="3000" data-z="-5">
+      <h1>Inhomogeneidades</h1>
     </div>
 
-    <div class="step box blue-box" data-x="2300" data-y="3000" data-z="-5" data-rotate-y="180">
-      <p>Inaplicabilidad del formalismo de espacio recíproco</p>
+    <div class="step widish big center" data-scale="0.7"
+	 data-x="2080" data-y="2780"
+      <p>Absorción de rayos X (EXAFS) en YBa<sub>2</sub>Cu<sub>3</sub>O<sub>7</sub>:</p>
     </div>
 
-    <!-- Revisión -->
-    <div class="step box"
-	 data-x="1800" data-y="2600" data-scale="2"
-	 data-rotate-y="180">
-    </div>
-
-    <!-- YBCO -->
-    <div class="step" data-x="3700" data-y="2500" data-scale="3">
+    <div class="step" data-x="3200" data-y="2700" data-scale="1.7">
       <h1>YBa<sub>2</sub>Cu<sub>3</sub>O<sub>7-&delta;</sub></h1>
       <img src="img/YBCO_O-Cu-O.png" height="600px"/>
     </div>
 
-    <!-- Acercamiento al cúmulo -->
-    <div class="step" data-x="3700" data-y="3150">
+    <div class="step widish big center" data-scale="0.7"
+	 data-x="2080" data-y="2880">    
+      <p>Doble distancia de enlace O(4)-Cu(1)<br />
+	<span class="small">
+	  <a href="http://dx.doi.org/10.1103/PhysRevLett.65.1675">
+	    Mustre de Leon <em>et al.</em>. Physical Review Letters, 65(13), 1675–1678. (1990)</a></span></p>
+      <p>Distorción dinámica<br />
+	<span class="small">
+	  <a href="http://dx.doi.org/10.1103/PhysRevB.51.8878">
+	    Salkola <em>et al.</em>. Physical Review B, 51(14), 8878–8891. (1995)</a></span></p>
     </div>
 
-    <div class="step" data-x="4700" data-y="3100" data-scale="1">
-      <img src="img/O-Cu-O.png" height="700px;" />
+    <div class="step" data-scale="0.6"
+	 data-x="2500" data-y="2920">
+      <img src="img/O-Cu-O.png" height="600px;" />
     </div>
-    
+
+    <div class="step widish big center" data-scale="0.7"
+	 data-x="2080" data-y="3140">
+      <p>Formación de <em>tiras</em> (stripes)<br />
+	<span class="small">
+	  <a href="http://dx.doi.org/10.1103/PhysRevLett.76.3412">
+	    Bianconi <em>et al.</em>. Physical Review Letters, 76(18), 3412–3415. (1996)</a></span></p>	  
+      <img src="img/stripes.png" />
+    </div>
+
+    <div class="step widish big center" data-scale="0.7"
+	 data-x="2500" data-y="3200">
+      <p>Estado electrónico inhomogéneo<br />
+	<span class="small">
+	  <a href="http://dx.doi.org/10.1038/35095012">
+	    Pan <em>et al.</em>Nature, 413(6853), 282–5. (2001)</a><br />
+	  <a href="http://dx.doi.org/10.1103/PhysRevLett.77.155">
+	    Salkola <em>et al.</em>Physical Review Letters, 77(1), 155–158. (1996)</a></span></p>
+    </div>	  
+
+    <div class="step box blue-box center exp"
+	 data-x="2300" data-y="3000" data-z="-10" data-rotate-y="180">
+      <p>Inaplicabilidad de la aproximación<br />
+	de Born-Oppenheimer</p>
+      <p class="small">(No se puede separar el movimiento nuclear del electrónico)</p>	
+    </div>
+
+    <!-- Modelo -->
     <div class="step long-box white-box" id="modelo"
 	 data-x="3800" data-y="3200" data-z="1990" data-scale="1.5">
       <h1>Modelo</h1>
+    </div>
+
+    <!-- Acercamiento al cúmulo -->
+    <div class="step" data-x="3200" data-y="3150">
     </div>
 
     <!-- Revisamos de nuevo las sugerencias experimentales -->
@@ -262,7 +391,7 @@
     </div>
 
     <div class="step" data-scale="0.7"
-	 data-x="2300" data-y="3070" data-z="2000">
+	 data-x="2300" data-y="3070" data-z="2005">
       <img src="img/dist.png" height="500px"/>
     </div>
 
@@ -290,6 +419,11 @@
     <div class="step box green-box center" id="polaron-exp"
 	 data-x="2300" data-y="3800">
       <h1>Energía de formación polarónica</h1>
+      <p>Demsar, J., Podobnik, B., Kabanov, V., Wolf, T., & Mihailovic, D. (1999). Superconducting Gap Δ c, the Pseudogap Δ p, and Pair Fluctuations above Tc in Overdoped Y 1-xCa xBa 2Cu 3O 7-δ from Femtosecond Time-Domain Spectroscopy. Physical Review Letters, 82(24), 4918–4921. doi:10.1103/PhysRevLett.82.4918</p>
+      <p>Usando espectroscopía de femtosegundos hallan la energía del pseudogap</p>
+      <p>En el pseudogap aparecen objetos polarónicos</p>
+      <p>por lo tanto esta se puede identificar como la energía de formación polarónica</p>
+      <p>$\sim 45$ meV</p>
     </div>
 
     <div class="step box white-box center" id="polaron"
@@ -298,8 +432,8 @@
     </div>
     <div class="step wide big center" data-scale="0.7"
 	 data-x="2300" data-y="3620" data-z="2000">
-      <p><strong>Energía del estado base:</strong> $\omega_g(\lambda_{ir})$</p>
-      <p><strong>Energía de formación bipolarónica:</strong> $\Delta\omega_g = \omega_g(\lambda_{ir}) - \omega_g(\lambda_{ir}=0)$</p>
+      <p><em>Energía del estado base:</em> $\omega_g(\lambda_{ir})$</p>
+      <p><em>Energía de formación bipolarónica:</em> $\Delta\omega_g = \omega_g(\lambda_{ir}) - \omega_g(\lambda_{ir}=0)$</p>
     </div>
     <div class="step" data-scale="0.6"
 	 data-x="2300" data-y="3840" data-z="2000">
@@ -331,7 +465,7 @@
 	 data-x="2010" data-y="4450" data-z="2000">
       <p>Con $\lambda_{ir}=0$, $H=H_{el}+H_{ph}$ tiene eigenestados de la forma</p>
       <p>$$\left|\psi\right\rangle = |\psi_{el}\rangle|\psi_{ph}\rangle$$</p>
-      <p>Con $|\psi_{el}\rangle$ y $|\psi_{ph}\rangle$ eigenestados de $H_{el}$ y $H_{ph}$ respectivamente.</p>
+      <p>Siendo $|\psi_{el}\rangle$ y $|\psi_{ph}\rangle$ eigenestados de $H_{el}$ y $H_{ph}$ respectivamente.</p>
     </div>
 
     <div class="step big widish center" data-scale="0.3" 
@@ -534,19 +668,19 @@
     </div>
 
     <div class="step box white-box" id="conclusiones"
-	 data-x="-1000" data-y="2200" data-z="1000"
+	 data-x="-1000" data-y="2550" data-z="1000"
 	 data-rotate-z="90" data-rotate-y="270">
       <h1>Conclusiones</h1>
     </div>
 
     <div class="step box white-box" id="trabajo-futuro"
-	 data-x="-1000" data-y="3400" data-z="1000"
+	 data-x="-1000" data-y="3600" data-z="1000"
 	 data-rotate-z="90" data-rotate-y="270">
       <h1>Trabajo futuro</h1>
     </div>
 
     <div class="step box white-box" id="agradecimientos"
-	 data-x="-1000" data-y="4600" data-z="1000"
+	 data-x="-1000" data-y="4650" data-z="1000"
 	 data-rotate-z="90" data-rotate-y="270">
       <h1>Agradecimientos</h1>
     </div>

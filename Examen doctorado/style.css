@@ -23,12 +23,14 @@ ul,ol{list-style-position: inside;}
 .narrow{width:20em;}
 .center{text-align:center;}
 .semi-white-bg{background-color: rgba(255,255,255,0.5);}
+.semi-white-box{background-color: rgba(255,255,255,0.7)}
+.white-bg{background-color: white;}
 
 .box-shadow {box-shadow: 1em 0.5em 0.5em #AAAAAA;}
 .white-box {background-color: white;}
 .green-box {background-color: #D1FFD8;}
 .blue-box {background-color: #CCBDFC;}
-.white-box, .green-box, .blue-box {
+.white-box, .green-box, .blue-box, .semi-white-box {
     border: 1px solid #777777;
     border-radius: 2em;
     padding: 1em;
@@ -74,21 +76,44 @@ ul,ol{list-style-position: inside;}
     margin-top: 40px;
     text-align: center;
 }
-#portada .info {
-    margin: 70px 50px;
-    text-align: center;
+.portada-info {text-align: center;}
+.portada-info .concepto {
+    font-size: 1.7em;
+    padding: 1em 5em;
+}
+.portada-info .dato {font-size: 1.3em;}
+.portada-info .fecha {
+    float:right;
+    padding: 4em 2em;
 }
 
+#intro img {margin: 1em;}
 
 /* Esquema */
 #esquema,
 #agradecimientos,
 #conclusiones,
-#trabajo-futuro {background-color: rgba(255,255,255,0.7);}
+#trabajo-futuro,
+#objetivo {background-color: rgba(255,255,255,0.7);}
+
+#objetivo p,
+#objetivo2 p {
+    font-size: 1.8em;
+    text-align:center;
+}
+
+#objetivo li,
+#objetivo2 li{font-size: 1.6em;}
+
 #esquema > ol {
     font-size: 1.6em;
     margin-left: 8em;
     margin-top: 2em;
+}
+
+.exp p{
+    font-size: 3em;
+    margin-top:3em;
 }
 
 #param {width:32em;}
@@ -127,4 +152,10 @@ ul,ol{list-style-position: inside;}
 .oval2{
     background-color:rgb(220,220,220);
     float:left;
+}
+.oval3 {
+    border-radius:3em;
+    width:22em;
+    height:7em;
+    background-color: rgb(180,220,180);
 }
