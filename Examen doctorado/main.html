@@ -104,7 +104,7 @@
 	    <li><a href="#isot">Efectos isotópicos</a></li>
 	  </ul>
 	</li>
-	<li>Discusión y Conclusiones</li>
+	<li><a href="#conclusiones">Conclusiones</a></li>
 	<li>Trabajo futuro</li>
       </ol>
     </div>
@@ -169,7 +169,7 @@
     </div>
 
     <!-- Acercamiento al cúmulo -->
-    <div class="step" data-x="3700" data-y="3200">
+    <div class="step" data-x="3700" data-y="3150">
     </div>
 
     <div class="step" data-x="4700" data-y="3100" data-scale="1">
@@ -298,8 +298,8 @@
     </div>
     <div class="step wide big center" data-scale="0.7"
 	 data-x="2300" data-y="3620" data-z="2000">
-      <p>Energía de formación bipolarónica: $\Delta\omega_g = \omega_g(\lambda_{ir}) - \omega_g(\lambda_{ir}=0)$</p>
-      <p>Donde $\omega_g(\lambda_{ir})$ es la energía del estado base.</p>
+      <p><strong>Energía del estado base:</strong> $\omega_g(\lambda_{ir})$</p>
+      <p><strong>Energía de formación bipolarónica:</strong> $\Delta\omega_g = \omega_g(\lambda_{ir}) - \omega_g(\lambda_{ir}=0)$</p>
     </div>
     <div class="step" data-scale="0.6"
 	 data-x="2300" data-y="3840" data-z="2000">
@@ -327,14 +327,46 @@
       <h2>Clasificación de las excitaciones</h2>
     </div>
 
+    <div class="step wide big center" data-scale="0.3"
+	 data-x="2010" data-y="4450" data-z="2000">
+      <p>Con $\lambda_{ir}=0$, $H=H_{el}+H_{ph}$ tiene eigenestados de la forma</p>
+      <p>$$\left|\psi\right\rangle = |\psi_{el}\rangle|\psi_{ph}\rangle$$</p>
+      <p>Con $|\psi_{el}\rangle$ y $|\psi_{ph}\rangle$ eigenestados de $H_{el}$ y $H_{ph}$ respectivamente.</p>
+    </div>
+
+    <div class="step big widish center" data-scale="0.3" 
+	 data-x="2010" data-y="4525" data-z="2000">
+      <div class="oval1">
+	<p>Una <em>excitación fonónica</em>:</p>
+	<p>$$|\psi\rangle=|0_{el}\rangle|\psi_{ph}\rangle$$</p>
+	<p>con $|0_{el}\rangle$ el estado base de $H_{el}$.</p>
+      </div>
+      <div class="oval2">
+	<p>Una <em>excitación electrónica</em>:</p>
+	<p>$$|\psi\rangle=|\psi_{el}\rangle|0_{ph}\rangle$$</p>
+	<p>Con $|0_{ph}\rangle$ el estado base de $H_{ph}$</p>
+      </div>
+    </div>
+
+    <div class="step big center narrow" data-scale="0.3"
+	 data-x="1910" data-y="4630" data-z="2000">
+      <p>Para $\lambda_{ir}>0$ los eigenestados ya no tienen la forma $|\psi_{el}\rangle|\psi_{ph}\rangle$</p>
+      <p>Sin embargo siguen siendo <em>mayormente electrónicos o fonónicos</em> para $\lambda_{ir}$ pequeños</p>
+    </div>
+
+    <div class="step" data-scale="0.25"
+	 data-x="2120" data-y="4640" data-z="2000">
+      <img src="img/el-prod.png" height="550px" />
+    </div>
+
     <div class="step" data-scale="0.6"
 	 data-x="2500" data-y="4550" data-z="2000">
       <img src="img/ir-spect.png" height="650px" />
     </div>
 
-    <div class="step wide big center" data-scale="0.4"
-	 data-x="2000" data-y="4700" data-z="2000">
-      <p>Comparación con el experimento</p>
+    <div class="step wide big center" data-scale="0.3"
+	 data-x="2050" data-y="4820" data-z="2000">
+      <img src="img/ph-pr.png" height="700px"/>
     </div>
 
     <div class="step widish center big" data-scale="0.4"
@@ -424,7 +456,7 @@
 
     <div class="step wide center big" data-scale="0.3"
 	 data-x="1030" data-y="2980" data-z="2000">
-      <h1>Energía de formación polarónica</h1>
+      <h1>Energía de formación bipolarónica</h1>
       <p>$$\Delta_g=\frac{\Delta\omega_g(O^{16})-\Delta\omega_g(O^{18})}{\Delta\omega_g(O^{16})}$$</p>
       <p>$\Delta\omega_g$ es la diferencia de energía del estado base en el sistema acoplado ($\lambda_{ir}>0$)</p>
       <p>con el estado base en el sistema sin acoplar ($\lambda_{ir}=0$).</p>
@@ -479,7 +511,7 @@
       <p>Gweon <em>et al.</em>: efecto isotópico de &#126;15 meV en
 	Bi<sub>2</sub>Sr<sub>2</sub>CaCu<sub>2</sub>O<sub>8+&delta;</sub>. (ARPES)<br />
 	<span class="small"><a href="http://dx.doi.org/10.1038/nature02731">Nature (2004), 430(6996), 187–90.</a></span></p>
-      <p>Douglas <em>et al.</em>: hallan efecto isotópico de 0.9&plusmn;0.4<br />
+      <p>Douglas <em>et al.</em>: hallan efecto isotópico de 0.9&plusmn;0.4 meV<br />
 	<span class="small"><a href="https://dx.doi.org/10.1038/nature05738(2007)">Nature (2007), 446(7133), E5.</a></span></p>
       <p>Este modelo predice efecto de 1.6 meV</p>
     </div>
@@ -501,18 +533,24 @@
       <p class="small"><a href="http://dx.doi.org/10.1007/s10948-014-2913-5">Journal of Superconductivity and Novel Magnetism (2014), 1(6–10).</a></p>
     </div>
 
-    <div class="step box white-box" id="agradecimientos"
+    <div class="step box white-box" id="conclusiones"
 	 data-x="-1000" data-y="2200" data-z="1000"
+	 data-rotate-z="90" data-rotate-y="270">
+      <h1>Conclusiones</h1>
+    </div>
+
+    <div class="step box white-box" id="trabajo-futuro"
+	 data-x="-1000" data-y="3400" data-z="1000"
+	 data-rotate-z="90" data-rotate-y="270">
+      <h1>Trabajo futuro</h1>
+    </div>
+
+    <div class="step box white-box" id="agradecimientos"
+	 data-x="-1000" data-y="4600" data-z="1000"
 	 data-rotate-z="90" data-rotate-y="270">
       <h1>Agradecimientos</h1>
     </div>
-
-    <div class="step box white-box" id="final"
-	 data-x="-1000" data-y="3400" data-z="1000"
-	 data-rotate-z="90" data-rotate-y="270">
-      <h1>Gracias por su atención</h1>
-    </div>
-
+    
     <!-- Vista global final -->
     <div class="step" data-x="2000" data-y="2500" data-scale="9">
     </div>

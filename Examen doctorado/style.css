@@ -20,6 +20,7 @@ ul,ol{list-style-position: inside;}
 
 .wide{width: 60em;}
 .widish{width:40em;}
+.narrow{width:20em;}
 .center{text-align:center;}
 .semi-white-bg{background-color: rgba(255,255,255,0.5);}
 
@@ -82,7 +83,8 @@ ul,ol{list-style-position: inside;}
 /* Esquema */
 #esquema,
 #agradecimientos,
-#final {background-color: rgba(255,255,255,0.7);}
+#conclusiones,
+#trabajo-futuro {background-color: rgba(255,255,255,0.7);}
 #esquema > ol {
     font-size: 1.6em;
     margin-left: 8em;
@@ -111,4 +113,18 @@ ul,ol{list-style-position: inside;}
 #isot-conclusiones{
     font-size:2em;
     width: 28em;
+}
+
+.oval1, .oval2 {
+    border-radius:5em;
+    width:20em;
+    height:8em;
+}    
+.oval1{
+    background-color:rgb(240,240,240);
+    float:right;
+}
+.oval2{
+    background-color:rgb(220,220,220);
+    float:left;
 }
