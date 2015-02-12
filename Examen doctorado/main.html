@@ -97,7 +97,7 @@
 	 data-x="1700" data-y="80" data-z="2005">
       <h1>Alta $T_c$</h1>
       <p>$T_c$ demasiado alta para BCS convencional.</p>
-      <p>¿Qué es lo forma los pares de carga?</p>
+      <p>¿Qué es lo que forma los pares de carga?</p>
       <p>¿Se puede adaptar la BCS?</p><br />
       <p>No existe una explicación teórica satisfactoria</p>
     </div>
@@ -109,7 +109,7 @@
       <h1>Objetivo</h1>
       <p>Contribuir a la respuesta de:</p>
       <ul>
-	<li>¿Es aplicable la teoría BCS a los superconductores de alta $T_c$?</li>
+	<li>¿Es adaptable la teoría BCS a los superconductores de alta $T_c$?</li>
 	<li>¿Se pueden tener interacciones atractivas entre cargas con mecanismos diferentes al intercambio de fonones?</li>
       </ul>
     </div>
@@ -134,7 +134,7 @@
 	<li><a href="#exp">Resultados experimentales</a>
 	  <ul>
 	    <li><a href="#expResitividad">Resistividad eléctrica</a></li>
-	    <li><a href="#expCalorEsp">Calor específico</a></li>
+	    <!-- <li><a href="#expCalorEsp">Calor específico</a></li> -->
 	    <li><a href="#expIsot">Efectos isotópicos anómalos</a></li>
 	    <li><a href="#expInh">Inhomogeneidades estructurales y electrónicas</a></li>
 	  </ul>
@@ -149,7 +149,7 @@
 	  </ul>
 	</li>
 	<li><a href="#conclusiones">Conclusiones</a></li>
-	<li>Trabajo futuro</li>
+	<li><a href="#trabajo-futuro">Trabajo futuro</a></li>
       </ol>
     </div>
 
@@ -161,23 +161,32 @@
 
     <!-- Resistividad eléctrica -->
     <div class="step box green-box" id="expResitividad"
-	 data-x="1200" data-y="2200">
+	 data-x="1750" data-y="2200" data-z="-5">
       <h1>Resistividad eléctrica</h1>
     </div>
 
-    <div class="step box blue-box" data-x="1200" data-y="2200" data-z="-5" data-rotate-y="180">
-      <p>Interacciones $e^--e^-$ fuertes.</p>
+    <div class="step widish big center" data-scale="0.8"
+	 data-x="1750" data-y="2100">
+      <p>Para los compuestos sin dopar:<br />
+	<em>Teoría de bandas:</em> Metal<br />
+	<em>Experimento:</em> Aislante</p>
+      <p>En la teoría de bandas se asume que la carga se mueve en un potencial fijo.</p>
+    </div>
+
+    <div class="step box blue-box center exp"
+	 data-x="1750" data-y="2200" data-z="-10" data-rotate-y="180">
+      <p>Fuertes correlaciones de las cargas con otras excitaciones del sistema</p>
     </div>
     
     <!-- Calor específico -->
-    <div class="step box green-box" id="expCalorEsp"
-	 data-x="2300" data-y="2200">
-      <h1>Calor específico</h1>
-    </div>
+    <!-- <div class="step box green-box" id="expCalorEsp" -->
+    <!-- 	 data-x="2300" data-y="2200"> -->
+    <!--   <h1>Calor específico</h1> -->
+    <!-- </div> -->
 
-    <div class="step box blue-box" data-x="2300" data-y="2200" data-z="-5" data-rotate-y="180">
-      <p>Acoplamiento $e^-$-fonón importante.</p>
-    </div>
+    <!-- <div class="step box blue-box" data-x="2300" data-y="2200" data-z="-5" data-rotate-y="180"> -->
+    <!--   <p>Acoplamiento $e^-$-fonón importante.</p> -->
+    <!-- </div> -->
 
     <!-- Efectos isotópicos anómalos -->
     <div class="step box green-box" id="expIsot"
@@ -391,7 +400,7 @@
 
     <div class="step wide center big" data-scale="0.6"
 	 data-x="2300" data-y="2880" data-z="2000">
-      <p>Hallamos la probabilidad de hallar al sistema en el estado base con distintos valores de $u_{ir}$</p>
+      <p>Hallamos la densidad de probabilidad de hallar al sistema en el estado base con distintos valores de $u_{ir}$</p>
     </div>
 
     <div class="step" data-scale="0.7"
@@ -498,6 +507,10 @@
 	  Bonn <em>et al.</em> Physical Review B, 37(4), 1574–1579. (1988)</a></p>
     </div>
 
+    <div class="step" data-scale="0.6"
+	 data-x="2500" data-y="4550" data-z="2000">
+    </div>
+
     <div class="step wide big center" data-scale="0.3"
 	 data-x="2050" data-y="4820" data-z="2000">
       <img src="img/ph-pr.png" height="700px"/>
@@ -508,7 +521,7 @@
       <h2>Resumen espectro infrarrojo</h2>
       <ul>
 	<li>Se reproduce el resultado experimental</li>
-	<li>Se observa un hombro en el modo infrarrojo</li>
+	<li>El <em>hombro</em> en el espectro experimental se puede atribuir a las otras excitaciones</li>
 	<li>Renormalización de las vibraciones con $\lambda_{ir}\gg 1$</li>
       </ul>
     </div>
@@ -591,7 +604,7 @@
     <div class="step wide center big" data-scale="0.3"
 	 data-x="1030" data-y="2980" data-z="2000">
       <h1>Energía de formación bipolarónica</h1>
-      <p>$$\Delta_g=\frac{\Delta\omega_g(O^{16})-\Delta\omega_g(O^{18})}{\Delta\omega_g(O^{16})}$$</p>
+      <p>$$\Delta_g=\frac{\Delta\omega_g(O^{16})-\Delta\omega_g(O^{18})}{\Delta\omega_g(O^{16})}\times 100$$</p>
       <p>$\Delta\omega_g$ es la diferencia de energía del estado base en el sistema acoplado ($\lambda_{ir}>0$)</p>
       <p>con el estado base en el sistema sin acoplar ($\lambda_{ir}=0$).</p>
     </div>
@@ -609,7 +622,7 @@
     <div class="step wide center big" data-scale="0.3"
 	 data-x="1400" data-y="2970" data-z="2000">
       <h1>Excitaciones infrarojas</h1>
-      <p>$$\Delta_i=\frac{\omega_i(O^{16})-\omega_i(O^{18})}{\omega_i(O^{16})}$$</p>
+      <p>$$\Delta_i=\frac{\omega_i(O^{16})-\omega_i(O^{18})}{\omega_i(O^{16})}\times 100$$</p>
       <p>$\omega_i$ es la diferencia de energía entre el estado excitado y el estado base.</p>
     </div>
 
@@ -642,6 +655,10 @@
 	  Crawford <em>et al.</em>Physical Review B, 38(16), 11382–11390. (1988)</a></p>	  
     </div>
 
+    <div class="step" data-scale="0.6"
+	 data-x="2500" data-y="4550" data-z="2000">
+    </div>
+
     <div class="step wide center" data-scale="0.45"
 	 data-x="1020" data-y="3425" data-z="2000">
       <h1>Excitaciones electrónicas</h1>
@@ -650,20 +667,20 @@
 
     <div class="step wide center big" data-scale="0.3"
 	 data-x="1020" data-y="3620" data-z="2000">
-      <p>Gweon <em>et al.</em>: efecto isotópico de &#126;15 meV en
+      <p>Gweon <em>et al.</em>: efecto isotópico de &#126;10-40 meV en
 	Bi<sub>2</sub>Sr<sub>2</sub>CaCu<sub>2</sub>O<sub>8+&delta;</sub>. (ARPES)<br />
 	<span class="small"><a href="http://dx.doi.org/10.1038/nature02731">Nature (2004), 430(6996), 187–90.</a></span></p>
       <p>Douglas <em>et al.</em>: hallan efecto isotópico de 0.9&plusmn;0.4 meV<br />
 	<span class="small"><a href="https://dx.doi.org/10.1038/nature05738(2007)">Nature (2007), 446(7133), E5.</a></span></p>
-      <p>Este modelo predice efecto de 1.6 meV</p>
+      <p>Este modelo predice efecto de &#126;1.6 meV</p>
     </div>
 
     <div class="step" id="isot-conclusiones" data-scale="0.4"
 	 data-x="1400" data-y="3550" data-z="2000">
       <h3>Resumen de los efectos isotópicos:</h3>
       <ul>
-	<li>Efectos isotópicos diferentes a la predicción harmómica en acoplamientos intermedios.</li>
 	<li>Evidencia de comportamiento polarónico en el primer estado excitado.</li>
+	<li>Efectos isotópicos diferentes a la predicción harmómica en acoplamientos intermedios.</li>
 	<li>Diferentes efectos isotópicos dependiendo de la excitación</li>
 	<li>Efecto isotópico negativo pero pequeño en la excitación electrónica.</li>
       </ul>
@@ -679,22 +696,64 @@
 	 data-x="-1000" data-y="2550" data-z="1000"
 	 data-rotate-z="90" data-rotate-y="270">
       <h1>Conclusiones</h1>
+      <ul>
+	<li>Existe evidencia de que los grados de libertad electrónicos y de la red cristalina están fundamentalmente correlacionados.</li>
+	<li>Los modelos en espacio real con acoplamiento carga-red son de utilidad para entender algunas observaciones experimentales tales como:
+	  <ul>
+	    <li>Distorción dinámica del cúmulo O(4)-Cu(1)-O(4)</li>
+	    <li>Anomalías en el espectro infrarrojo</li>
+	    <li>Efectos isotópicos anómalos</li>
+	  </ul>
+	</li>
     </div>
 
-    <div class="step box white-box" id="trabajo-futuro"
-	 data-x="-1000" data-y="3600" data-z="1000"
+    <div class="step box"
+	 data-x="-1000" data-y="450" data-z="1000"
+	 data-rotate-z="90" data-rotate-y="270">
+    </div>
+    
+    <div class="step box white-box center" id="trabajo-futuro"
+	 data-x="-995" data-y="3600" data-z="1000"
 	 data-rotate-z="90" data-rotate-y="270">
       <h1>Trabajo futuro</h1>
+      <h2>¿Pueden los polarones mediar una interacción atractiva entre portadores de carga?</h2>
     </div>
 
-    <div class="step box white-box" id="agradecimientos"
+    <div class="step widish big center" data-scale="0.65"
+	 data-x="-1000" data-y="3650" data-z="1040"
+	 data-rotate-z="90" data-rotate-y="270">
+      <h4>¿Superconductividad de múltiples componentes?</h4>
+      <img src="img/multi.png" height="400px" />
+    </div>
+
+    <div class="step widish big center" data-scale="0.65"
+	 data-x="-1000" data-y="3650" data-z="760"
+	 data-rotate-z="90" data-rotate-y="270">
+      <p>Acoplar fermiones libres al cúmulo con objetos polarónicos:</p>
+      <p>$$H=H_{el}+H_{ph}+H_{el-ph}+H_A$$</p>
+      <p>$$H_A = E_A \sum_{\sigma, k=1,2} m_{\sigma, k} + t_A \sum_{\sigma} (a_{\sigma, 1}^\dagger a_{\sigma, 2} + a_{\sigma,2}^\dagger a_{\sigma, 1}) + \lambda_A \sum_{i,k,\sigma} \left( c_{i,\sigma}^\dagger a_{k,\sigma} + a_{k,\sigma}^\dagger c_{i,\sigma} \right)$$</p>
+    </div>
+
+    <div class="step box white-box center" id="agradecimientos"
 	 data-x="-1000" data-y="4650" data-z="1000"
 	 data-rotate-z="90" data-rotate-y="270">
       <h1>Agradecimientos</h1>
+      <ul>
+	<li>A mi esposa Debra por su apoyo, comprensión y entusiasmo en todos mis proyectos.</li>
+	<li>A mi familia por su apoyo siempre incondicional.</li>
+	<li>A mi asesor José Mustre por su ayuda y calidad humana en estos 5 años de colaboración.</li>
+	<li>A mis amigos tanto en Mérida como en Puebla</li>
+	<li>A todo el personal del CINVESTAV por hacer posible este doctorado.</li>
+	<li>Al CONACYT por la beca otorgada.</li>
+      </ul>
     </div>
     
-    <!-- Vista global final -->
-    <div class="step" data-x="2000" data-y="2500" data-scale="9">
+    <!-- Gracias por su atención -->
+    <div class="step center"
+	 data-x="2000" data-y="2000" data-z="5000"
+	 data-scale="5">
+      <p class="gracias">Gracias por su atención.<br />
+	<span class="email">ags3006@gmail.com</span></p>
     </div>
     
   </div> <!-- #impress -->

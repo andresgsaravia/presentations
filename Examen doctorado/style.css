@@ -105,7 +105,7 @@ ul,ol{list-style-position: inside;}
 #objetivo li,
 #objetivo2 li{font-size: 1.6em;}
 
-#esquema > ol {
+#esquema > ol{
     font-size: 1.6em;
     margin-left: 8em;
     margin-top: 2em;
@@ -164,4 +164,28 @@ ul,ol{list-style-position: inside;}
     width:15em;
     height:7em;
     background-color: rgba(180,220,180,0.8);
+}
+
+#conclusiones > ul {
+    font-size: 1.8em;
+    margin: 2em 3em;
+}
+
+#agradecimientos > ul {
+    font-size:1.8em;
+    margin-top:3em;
+}
+
+.gracias {
+    font-size: 4em;
+    width: 10em;
+    padding:0.8em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: rgba(150,150,237,0.7);
+}
+
+.gracias .email {
+    font-size:0.4em;
+    float:right;
 }
