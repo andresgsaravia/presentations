@@ -77,12 +77,14 @@
       <h1>Explicación teórica</h1>
     </div>
 
-    <div class="step wide big center"
-	 data-x="1300" data-y="0" data-z="2000">
+    <div class="step wide big center" data-scale="0.7"
+	 data-x="1250" data-y="100" data-z="2000">
       <h1>Baja $T_c$</h1>
-      <p>Asume una interacción atractiva entre electrones</p>
-      <p>En SC de baja Tc esta interacción está mediada por fonones</p>
-      <p>Tc máxima de 30K</p>
+      <h2>Teoría BCS (1957)</h2>
+      <p>Asume una interacción atractiva entre electrones.</p>
+      <p>Esta interacción está mediada por fonones<br />(vibraciones de la red cristalina).</p>
+      <p>Estos electrones forman pares<br />(pares de Cooper)</p>
+      <p>Predice una $T_c$ máxima de $\sim 30 - 40$ K.</p>
     </div>
 
     <div class="step" data-scale="0.55"
@@ -91,11 +93,13 @@
     </div>
 
     <!-- SC de alta-Tc -->
-    <div class="step"
-	 data-x="1500" data-y="140" data-z="2005">
-      <h1>Superconductores de alta temperatura crítica</h1>
-      <p>¿Qué es lo que media la interacción?</p>
-      <p>¿Es un mecanismo diferente al BCS?</p>      
+    <div class="step wide big center" data-scale="0.7"
+	 data-x="1700" data-y="80" data-z="2005">
+      <h1>Alta $T_c$</h1>
+      <p>$T_c$ demasiado alta para BCS convencional.</p>
+      <p>¿Qué es lo forma los pares de carga?</p>
+      <p>¿Se puede adaptar la BCS?</p><br />
+      <p>No existe una explicación teórica satisfactoria</p>
     </div>
 
     <!-- Objetivo -->
@@ -211,7 +215,7 @@
     </div>
 
     <div class="step narrow big center" data-scale="0.5"
-	 data-x="1500" data-y="2930">
+	 data-x="1500" data-y="2850">
       <p style="float:right;text-align:right;">Efecto isotópico en $T^*$<br /> de signo contrario a $T_c$<br />
 	<span class="small">
 	  <a href="http://dx.doi.org/10.1103/PhysRevLett.84.1990">
@@ -415,17 +419,7 @@
       <p>Este observación permite establecer un valor para $\lambda_{ir}$</p>
     </div>
 
-    <!-- Energía de formación polarónica -->
-    <div class="step box green-box center" id="polaron-exp"
-	 data-x="2300" data-y="3800">
-      <h1>Energía de formación polarónica</h1>
-      <p>Demsar, J., Podobnik, B., Kabanov, V., Wolf, T., & Mihailovic, D. (1999). Superconducting Gap Δ c, the Pseudogap Δ p, and Pair Fluctuations above Tc in Overdoped Y 1-xCa xBa 2Cu 3O 7-δ from Femtosecond Time-Domain Spectroscopy. Physical Review Letters, 82(24), 4918–4921. doi:10.1103/PhysRevLett.82.4918</p>
-      <p>Usando espectroscopía de femtosegundos hallan la energía del pseudogap</p>
-      <p>En el pseudogap aparecen objetos polarónicos</p>
-      <p>por lo tanto esta se puede identificar como la energía de formación polarónica</p>
-      <p>$\sim 45$ meV</p>
-    </div>
-
+    <!-- Energía de formación bipolarónica -->
     <div class="step box white-box center" id="polaron"
 	 data-x="2300" data-y="3800" data-z="1990">
       <h1> Energía de formación bipolarónica</h1>
@@ -442,15 +436,13 @@
     <div class="step wide big center" data-scale="0.7"
 	 data-x="2300" data-y="4070" data-z="2000">
       <p>$\Delta\omega_g(\lambda_{ir}=0.1263$ eV$) \sim 38$ meV</p>
-      <p>Experimental: $\sim 45$ meV</p>
+      <p>Experimental: $\sim 45$ meV<br />
+	<span class="small">
+	  <a href="http://dx.doi.org/10.1103/PhysRevLett.82.4918">
+	    Demsar <em>et al.</em> Physical Review Letters, 82(24), 4918–4921. (1999)</a></span></p>
     </div>
 
-    <!-- Excitaciones infrarrojas -->
-    <div class="step box green-box center" id="ir-exp"
-	 data-x="2300" data-y="4600">
-      <h1>Espectro infrarrojo</h1>
-    </div>
-    
+    <!-- Excitaciones infrarrojas -->    
     <div class="step box white-box center" id="ir" 
 	 data-x="2300" data-y="4600" data-z="1990">
       <h1>Excitaciones infrarrojas</h1>
@@ -496,6 +488,14 @@
     <div class="step" data-scale="0.6"
 	 data-x="2500" data-y="4550" data-z="2000">
       <img src="img/ir-spect.png" height="650px" />
+    </div>
+
+    <div class="step box green-box center" id="ir-exp"
+	 data-x="2300" data-y="4600">
+      <h1>Espectro infrarrojo</h1>
+      <img src="img/ir-exp.png" height="500px" />
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.37.1574">
+	  Bonn <em>et al.</em> Physical Review B, 37(4), 1574–1579. (1988)</a></p>
     </div>
 
     <div class="step wide big center" data-scale="0.3"
@@ -632,6 +632,14 @@
 	  <tr><td>3 infrarrojo          </td><td> 1.40</td><td>3.75</td></tr>
 	</tbody>
       </table>
+    </div>
+
+    <div class="step center big" data-scale="0.3"
+	 data-x="1580" data-y="3020">
+      <img src="img/ir-isot-exp.png" height="500px" />
+      <p class="small">
+	<a href="http://dx.doi.org/10.1103/PhysRevB.38.11382">
+	  Crawford <em>et al.</em>Physical Review B, 38(16), 11382–11390. (1988)</a></p>	  
     </div>
 
     <div class="step wide center" data-scale="0.45"
