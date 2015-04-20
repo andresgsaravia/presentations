@@ -46,14 +46,15 @@
 
     <!-- Introducción -->
     <div class="step center box white-box" id="intro"
-	 data-x="1500" data-y="0">
+	 data-x="1500" data-y="0" data-z="-5">
       <h1>Introducción</h1>
+      <h2>Superconductividad</h2>
+    </div>
 
-      <a title="By Mai-Linh Doan (self photo) [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY-SA 2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons"
-	 href="https://commons.wikimedia.org/wiki/File%3AMeissner_effect_p1390048.jpg">
-	<img height="200" alt="Meissner effect p1390048"
-	     src="img/Meissner_effect.jpg"/>
-      </a>
+    <div class="step" data-scale="0.4"
+	 data-x="1500" data-y="-60" >
+      <img height="600"
+	   src="img/aplicaciones.png"/>
     </div>
 
     <div class="step center widish white-bg big"
@@ -66,9 +67,9 @@
       </ul>
     </div>
     
-    <div class="step" data-scale="0.55"
+    <div class="step semi-white-box intro" data-scale="0.55"
 	 data-x="1300" data-y="140" data-z="5">
-      <img src="img/Kamerlingh_Onnes.jpg" height="500"/>
+      <img src="img/Kamerlingh_Onnes.jpg" height="500" />
     </div>
 
     <!-- BCS -->
@@ -87,7 +88,7 @@
       <p>Predice una $T_c$ máxima de $\sim 30 - 40$ K.</p>
     </div>
 
-    <div class="step" data-scale="0.55"
+    <div class="step semi-white-box intro" data-scale="0.55"
 	 data-x="1700" data-y="140" data-z="5">
       <img src="img/Bednorz_Muller.jpg" height="500"/>
     </div>
@@ -159,6 +160,11 @@
       <h1>Resultados experimentales</h1>
     </div>
 
+    <div class="step"
+	 data-x="800" data-y="2200">
+      <img src="img/CuPhaseDiag.png" height="600px" />
+    </div>
+
     <!-- Resistividad eléctrica -->
     <div class="step box green-box" id="expResitividad"
 	 data-x="1750" data-y="2200" data-z="-5">
@@ -170,7 +176,7 @@
       <p>Para los compuestos sin dopar:<br />
 	<em>Teoría de bandas:</em> Metal<br />
 	<em>Experimento:</em> Aislante</p>
-      <p>En la teoría de bandas se asume que la carga se mueve en un potencial fijo.</p>
+      <p>En la teoría de bandas se asumen cargas independientes en un potencial fijo.</p>
     </div>
 
     <div class="step" data-scale="0.5"
@@ -194,7 +200,7 @@
 
     <div class="step box blue-box center exp"
 	 data-x="1750" data-y="2200" data-z="-10" data-rotate-y="180">
-      <p>Fuertes correlaciones de las cargas con otras excitaciones del sistema</p>
+      <p>No se pueden asumir cargas independientes.</p>
     </div>
     
     <!-- Calor específico -->
@@ -295,10 +301,10 @@
 	<span class="small">
 	  <a href="http://dx.doi.org/10.1103/PhysRevLett.65.1675">
 	    Mustre de Leon <em>et al.</em>. Physical Review Letters, 65(13), 1675–1678. (1990)</a></span></p>
-      <p>Distorción dinámica<br />
+      <p>Un potencial estático no reproduce el espectro infrarrojo<br />
 	<span class="small">
-	  <a href="http://dx.doi.org/10.1103/PhysRevB.51.8878">
-	    Salkola <em>et al.</em>. Physical Review B, 51(14), 8878–8891. (1995)</a></span></p>
+	  <a href="http://dx.doi.org/10.1103/PhysRevLett.65.1675">
+	    Mustre de Leon <em>et al.</em> Physical Review Letters, 65(13), 1675–1678. (1990)</a></span></p>
     </div>
 
     <div class="step" data-scale="0.6"
@@ -333,13 +339,16 @@
     </div>
 
     <!-- Modelo -->
+    <div class="step" data-x="3200" data-y="2700" data-scale="1.7">
+    </div>
+    <!-- Acercamiento al cúmulo -->
+    <div class="step" data-x="3200" data-y="3150">
+    </div>
+    
     <div class="step long-box white-box" id="modelo"
 	 data-x="3800" data-y="3200" data-z="1990" data-scale="1.5">
       <h1>Modelo</h1>
-    </div>
-
-    <!-- Acercamiento al cúmulo -->
-    <div class="step" data-x="3200" data-y="3150">
+      <img src="img/CuO2.png" height="200px"/>
     </div>
 
     <!-- Revisamos de nuevo las sugerencias experimentales -->
@@ -351,12 +360,12 @@
     <!-- Detalle del modelo -->
     <div class="step wide center big" data-scale="0.7"
 	 data-x="3800" data-y="2860" data-z="2000">
-      <p>Hamiltoniano en espacio real con interacciones carga-fonón</p>
+      <p>Hamiltoniano en espacio real con interacción de 2 cargas con los fonones</p>
       <p>$H = H_{el} + H_{ph} + H_{el-ph}$</p>
     </div>
 
     <div class="step wide center big" data-scale="0.6"
-	 data-x="3800" data-y="2950" data-z="2000">
+	 data-x="3850" data-y="2950" data-z="2000">
       <p>$  H_{el} = \sum_{\sigma,i=1}^3 E_i n_{\sigma i} 
         + U\sum_{i=1}^3 n_{i\downarrow}n_{i\uparrow} 
         + t\sum_{\sigma} \left(c_{1\sigma}^\dagger c_{2\sigma} + c_{2\sigma}^\dagger c_{3\sigma} + H.c. \right)$
@@ -364,18 +373,18 @@
     </div>
     
     <div class="step wide center big" data-scale="0.6"
-	 data-x="3650" data-y="3050" data-z="2000">
+	 data-x="3700" data-y="3050" data-z="2000">
       <p>$ H_{ph} = \hbar \omega_{ir}\left(b_{ir}^\dagger b_{ir}+\frac{1}{2}\right) + \hbar \omega_R \left( b_R^\dagger b_R + \frac{1}{2}\right)$
       </p>
     </div>
 
     <div class="step" data-scale="0.7"
-	 data-x="4000" data-y="3200" data-z="2000">
+	 data-x="4050" data-y="3150" data-z="2000">
       <img src="img/CuO2-vibrations.png" height="500px" />
     </div>
 
     <div class="step wide center big" data-scale="0.6"
-	 data-x="3650" data-y="3250" data-z="2000">
+	 data-x="3670" data-y="3260" data-z="2000">
       <p>$H_{el-ph} = \tilde{\lambda_{ir}}u_{ir}(n_3 - n_1) + \tilde{\lambda_R} u_R (n_1 + n_3-s_0)$</p>
       <br />
       <p>$u_R \equiv \left(\frac{\hbar}{2 m_R \omega_R}\right)^{1/2}(b_R^\dagger + b_R) = \frac{x_3 - x_1}{\sqrt{2}}$</p>
@@ -383,7 +392,7 @@
     </div>
 
     <div class="step big" data-scale="0.6" id="param"
-	 data-x="3850" data-y="3520" data-z="2000">
+	 data-x="3850" data-y="3530" data-z="2000">
       <h3>Elección de los parámetros</h3>
       <ul>
 	<li>Salto a primeros vecinos: $t=0.5$ eV</li>
@@ -674,10 +683,6 @@
 	  Crawford <em>et al.</em>Physical Review B, 38(16), 11382–11390. (1988)</a></p>	  
     </div>
 
-    <div class="step" data-scale="0.6"
-	 data-x="2500" data-y="4550" data-z="2000">
-    </div>
-
     <div class="step wide center" data-scale="0.45"
 	 data-x="1020" data-y="3425" data-z="2000">
       <h1>Excitaciones electrónicas</h1>
@@ -758,10 +763,10 @@
 	 data-rotate-z="90" data-rotate-y="270">
       <h1>Agradecimientos</h1>
       <ul>
-	<li>A mi esposa Debra por su apoyo, comprensión y entusiasmo en todos mis proyectos.</li>
-	<li>A mi familia por su apoyo siempre incondicional.</li>
+	<li>A mi esposa Debra por su apoyo, comprensión y entusiasmo en todos mis proyectos y a nuestra hija Ximena por su alegría y cariño.</li>
+	<li>A mi familia por su apoyo siempre incondicional sin importar la distancia.</li>
 	<li>A mi asesor José Mustre por su ayuda y calidad humana en estos 5 años de colaboración.</li>
-	<li>A mis amigos tanto en Mérida como en Puebla</li>
+	<li>A mis amigos tanto en Mérida como en Puebla.</li>
 	<li>A todo el personal del CINVESTAV por hacer posible este doctorado.</li>
 	<li>Al CONACYT por la beca otorgada.</li>
       </ul>
