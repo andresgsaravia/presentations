@@ -1,0 +1,194 @@
+html {background-color: #DDDDDD;}
+h1, h2, h3 {text-align: center;}
+a:link {
+    text-decoration: none;
+    color:black;
+}
+a:hover {text-decoration:underline}
+a:visited {color:black}
+ul,ol{list-style-position: inside;}
+
+.box {
+    width:60em;
+    height: 40em;
+}
+
+.long-box {
+    width:30em;
+    height:40em;
+}
+
+.wide{width: 60em;}
+.widish{width:40em;}
+.narrow{width:20em;}
+.center{text-align:center;}
+.semi-white-bg{background-color: rgba(255,255,255,0.5);}
+.semi-white-box{background-color: rgba(255,255,255,0.7)}
+.white-bg{background-color: white;}
+
+.box-shadow {box-shadow: 1em 0.5em 0.5em #AAAAAA;}
+.white-box {background-color: white;}
+.green-box {background-color: #D1FFD8;}
+.blue-box {background-color: #CCBDFC;}
+.white-box, .green-box, .blue-box, .semi-white-box {
+    border: 1px solid #777777;
+    border-radius: 2em;
+    padding: 1em;
+}
+.big {font-size:2em;}
+.small {font-size: 0.7em;}
+
+/* Contenido futuro oculto*/
+.step.future {
+    opacity: 0;
+}
+.step.present {
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+    opacity: 1;
+}
+
+.impress-supported .fallback-message {display: none;}
+
+#menu {
+    position: absolute;
+    margin-top:50px;
+    margin-left:10px;
+    padding:15px;
+    background-color: rgba(150,150,250,0.3);
+    border-radius: 30px;
+    border:1px solid rgb(200,200,200);
+}
+#menu:hover {background-color: rgba(150,150,250,1);}
+
+/* TitlePage */
+#titlePage {
+    background-image:url(img/profile.jpg);
+    background-position: 30px 30px;
+    background-repeat: no-repeat;
+}
+#titlePage .titulo {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 40px;
+    text-align: center;
+}
+.titlePage-info {text-align: center;}
+.titlePage-info .bigger {
+    font-size: 1.7em;
+    padding: 1em 5em;
+}
+.titlePage-info .smaller {font-size: 1.3em;}
+.titlePage-info .date {float:right;}
+.titlePage-info .name {float:left;}
+
+.intro img {margin: 1em;}
+
+/* Esquema */
+#esquema,
+#agradecimientos,
+#conclusiones,
+#trabajo-futuro,
+#objetivo {background-color: rgba(255,255,255,0.7);}
+
+#objetivo p,
+#objetivo2 p {
+    font-size: 1.8em;
+    text-align:center;
+}
+
+#objetivo li,
+#objetivo2 li{font-size: 1.6em;}
+
+#esquema > ol{
+    font-size: 1.6em;
+    margin-left: 8em;
+    margin-top: 2em;
+}
+
+.exp p{
+    font-size: 3em;
+    margin-top:3em;
+}
+
+#modelo img {
+    float:left;
+    margin-left:1em;
+}
+
+#param {width:32em;}
+#param ul {
+    list-style-type: square;
+    text-align: center;
+}
+#param .small {color: rgb(50,50,50);}
+#param a {color: rgb(50,50,50);}
+
+#shifts-table,
+#shifts-table th,
+#shifts-table td {border: 1px solid black;}
+#shifts-table {
+    width: 20em;
+    text-align: center;
+    font-size: 2em;
+    border-collapse: collapse;
+}
+#shifts-table td {min-width: 10em;}
+
+#isot-conclusiones{
+    font-size:2em;
+    width: 28em;
+}
+
+.oval1, .oval2 {
+    border-radius:5em;
+    width:20em;
+    height:8em;
+}    
+.oval1{
+    background-color:rgb(240,240,240);
+    float:right;
+}
+.oval2{
+    background-color:rgb(220,220,220);
+    float:left;
+}
+.oval3 {
+    border-radius:3em;
+    width:22em;
+    height:7em;
+    background-color: rgb(180,220,180);
+}
+.oval4 {
+    border-radius:2em;
+    width:15em;
+    height:7em;
+    background-color: rgba(180,220,180,0.8);
+}
+
+#conclusiones > ul {
+    font-size: 1.8em;
+    margin: 2em 3em;
+}
+
+#agradecimientos > ul {
+    font-size:1.8em;
+    margin-top:3em;
+}
+
+.gracias {
+    font-size: 4em;
+    width: 10em;
+    padding:0.8em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: rgba(150,150,237,0.7);
+}
+
+.gracias .email {
+    font-size:0.4em;
+    float:right;
+}
