@@ -1,4 +1,9 @@
-html {background-color: #DDDDDD;}
+/* Color scheme:
+   light blue: rgb(47,109,166)
+   dark blue: rgb(0,79,148)
+*/
+html {background-color: rgb(47,109,166);}
+.box-shadow {box-shadow: 20px 10px 10px rgb(0,79,148);}
 h1, h2, h3 {text-align: center;}
 a:link {
     text-decoration: none;
@@ -9,47 +14,45 @@ a:visited {color:black}
 ul,ol{list-style-position: inside;}
 
 .box {
-    width:60em;
-    height: 40em;
+    width:1000px;
+    height: 600px;
 }
-
-.long-box {
-    width:30em;
-    height:40em;
+.square-box{
+    width:600px;
+    height:600px;
 }
-
-.wide{width: 60em;}
-.widish{width:40em;}
-.narrow{width:20em;}
+.box-wide{width: 1000px;}
 .center{text-align:center;}
 .semi-white-bg{background-color: rgba(255,255,255,0.5);}
 .semi-white-box{background-color: rgba(255,255,255,0.7)}
 .white-bg{background-color: white;}
 
-.box-shadow {box-shadow: 1em 0.5em 0.5em #AAAAAA;}
-.white-box {background-color: white;}
-.green-box {background-color: #D1FFD8;}
-.blue-box {background-color: #CCBDFC;}
-.white-box, .green-box, .blue-box, .semi-white-box {
-    border: 1px solid #777777;
+.white-bg {background-color: white;}
+.green-bg {background-color: #D1FFD8;}
+.blue-bg {background-color: #CCBDFC;}
+.radius-box {
+    border: 2px solid rgb(0,79,148);
     border-radius: 2em;
     padding: 1em;
 }
 .big {font-size:2em;}
 .small {font-size: 0.7em;}
 
+.big-h1 h1 {
+    font-size: 4em;
+}
 /* Contenido futuro oculto*/
-.step.future {
-    opacity: 0;
-}
-.step.present {
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
-    opacity: 1;
-}
+/* .step.future { */
+/*     opacity: 0; */
+/* } */
+/* .step.present { */
+/*     -webkit-transition: 0.5s; */
+/*     -moz-transition:    0.5s; */
+/*     -ms-transition:     0.5s; */
+/*     -o-transition:      0.5s; */
+/*     transition:         0.5s; */
+/*     opacity: 1; */
+/* } */
 
 .impress-supported .fallback-message {display: none;}
 
@@ -85,10 +88,12 @@ ul,ol{list-style-position: inside;}
 .titlePage-info .date {float:right;}
 .titlePage-info .name {float:left;}
 
+#banner h1 {font-size:3.7em;}
+
 .intro img {margin: 1em;}
 
-/* Esquema */
-#esquema,
+/* Index */
+#index,
 #agradecimientos,
 #conclusiones,
 #trabajo-futuro,
@@ -103,7 +108,7 @@ ul,ol{list-style-position: inside;}
 #objetivo li,
 #objetivo2 li{font-size: 1.6em;}
 
-#esquema > ol{
+#index > ol{
     font-size: 1.6em;
     margin-left: 8em;
     margin-top: 2em;
@@ -179,16 +184,16 @@ ul,ol{list-style-position: inside;}
     margin-top:3em;
 }
 
-.gracias {
+.thanks {
     font-size: 4em;
     width: 10em;
     padding:0.8em;
     border: 1px solid black;
     border-radius: 1em;
-    background-color: rgba(150,150,237,0.7);
+    background-color: rgba(0,79,148,0.9);
 }
 
-.gracias .email {
+.thanks .email {
     font-size:0.4em;
     float:right;
 }
